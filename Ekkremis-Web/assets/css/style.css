@@ -327,7 +327,7 @@ img {
     ),
     url('/assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 1.jpeg') no-repeat center/cover;
     text-align: center;    
-    height: calc(100vh - var(--header-height));
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
