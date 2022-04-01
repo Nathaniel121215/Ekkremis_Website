@@ -680,24 +680,26 @@ main
   }
 
   /* =====HOME=====*/
-
-  .slideshow-container
+  .home
   {
-    height: 100vh;
-    
+    border: 1px solid red;
+    min-height: 100vh;
   }
   #firstimg
   {
-    height: 100vh;
+    border: 1px solid red;
+    min-height: 100vh;
   }
   #secondimg
   {
-    height: 100vh;
+    border: 1px solid red;
+    min-height: 100vh;
   }
 
   #thirdimg
   {
-    height: 100vh;
+    border: 1px solid red;
+    min-height: 100vh;
   }
 
     /* =====ABOUT US=====*/
