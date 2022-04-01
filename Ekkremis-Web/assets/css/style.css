@@ -287,6 +287,7 @@ img {
 {
   background-color: var(--dark-color-lighten);
   overflow: hidden;
+  border: 1px solid red;
 }
 .home__data
 {
@@ -361,6 +362,7 @@ img {
   bottom: 0;
   left: 50%;
   transform: translate(-50%,-50%);
+
 }
 .dot {
   
@@ -683,23 +685,23 @@ main
   /* =====HOME=====*/
   .home
   {
-    border: 1px solid red;
+ 
     min-height: 100vh;
   }
   #firstimg
   {
-    border: 1px solid red;
+
     min-height: 100vh;
   }
   #secondimg
   {
-    border: 1px solid red;
+
     min-height: 100vh;
   }
 
   #thirdimg
   {
-    border: 1px solid red;
+
     min-height: 100vh;
   }
 
