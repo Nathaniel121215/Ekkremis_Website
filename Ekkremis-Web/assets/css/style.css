@@ -286,7 +286,6 @@ img {
 {
   background-color: var(--dark-color-lighten);
   overflow: hidden;
-  height: calc(100vh - var(--header-height));
 }
 .home__data
 {
@@ -686,10 +685,6 @@ main
   {
     height: 100vh;
     
-  }
-  .home
-  {
-    height: 100vh;
   }
   #firstimg
   {
