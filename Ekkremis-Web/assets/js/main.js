@@ -34,10 +34,19 @@ sr.reveal(`#client8`,{origin: 'bottom', interval: 2200, delay: 1600})
 
 /*===== SERVICE =====*/ 
 
-sr.reveal(`#services__title`,{origin: 'left'})
-sr.reveal(`.services__details`,{origin: 'left',delay: 1000 })
-sr.reveal(`#main__box1`,{origin: 'bottom', delay: 1500 })
-sr.reveal(`#main__box2`,{origin: 'bottom',delay: 2000 })
+sr.reveal(`#services__title`,{origin: 'left',delay: 200})
+sr.reveal(`.services__details`,{origin: 'left',delay: 400 })
+sr.reveal(`#main__box1`,{origin: 'bottom', delay: 600 })
+sr.reveal(`#main__box2`,{origin: 'bottom',delay: 800 })
+
+sr.reveal(`#servicessub__boxs1`,{origin: 'bottom',delay: 1000 })
+sr.reveal(`#servicessub__boxs2`,{origin: 'bottom',delay: 1100 })
+sr.reveal(`#servicessub__boxs3`,{origin: 'bottom',delay: 1200 })
+sr.reveal(`#servicessub__boxs4`,{origin: 'bottom',delay: 1300 })
+sr.reveal(`#servicessub__boxs5`,{origin: 'bottom',delay: 1400 })
+sr.reveal(`#servicessub__boxs6`,{origin: 'bottom',delay: 1500 })
+sr.reveal(`#servicessub__boxs7`,{origin: 'bottom',delay: 1600 })
+sr.reveal(`#servicessub__boxs8`,{origin: 'bottom',delay: 1700 })
 
 
 
