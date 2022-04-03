@@ -1,4 +1,8 @@
+
+
 const sr = ScrollReveal({     distance: '60px',     duration: 2500,     delay: 100, reset: true })
+
+/*===== INDEX =====*/ 
 
 sr.reveal(`#aboutus_title`,{origin: 'left', interval: 2200, delay: 200 })
 sr.reveal(`#img1`,{origin: 'top', interval: 2200, delay: 400})
@@ -17,7 +21,7 @@ sr.reveal(`#value2`,{origin: 'bottom', interval: 2200, delay: 400})
 sr.reveal(`#value3`,{origin: 'bottom', interval: 2200, delay: 600})
 sr.reveal(`#value4`,{origin: 'bottom', interval: 2200, delay: 800})
 
-sr.reveal(`.Client__title`,{origin: 'left', interval: 2200})
+sr.reveal(`.Client__title`,{origin: 'left', interval: 2200});
 sr.reveal(`#client1`,{origin: 'bottom', interval: 2200, delay: 200})
 sr.reveal(`#client2`,{origin: 'bottom', interval: 2200, delay: 400})
 sr.reveal(`#client3`,{origin: 'bottom', interval: 2200, delay: 600})
@@ -26,6 +30,14 @@ sr.reveal(`#client5`,{origin: 'bottom', interval: 2200, delay: 1000})
 sr.reveal(`#client6`,{origin: 'bottom', interval: 2200, delay: 1200})
 sr.reveal(`#client7`,{origin: 'bottom', interval: 2200, delay: 1400})
 sr.reveal(`#client8`,{origin: 'bottom', interval: 2200, delay: 1600})
+
+
+/*===== SERVICE =====*/ 
+
+sr.reveal(`#services__title`,{origin: 'left'})
+sr.reveal(`.services__details`,{origin: 'left',delay: 1000 })
+sr.reveal(`#main__box1`,{origin: 'bottom', delay: 1500 })
+sr.reveal(`#main__box2`,{origin: 'bottom',delay: 2000 })
 
 
 
