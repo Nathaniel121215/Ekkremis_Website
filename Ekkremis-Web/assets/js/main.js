@@ -1,5 +1,6 @@
 
 
+
 const sr = ScrollReveal({     distance: '60px',     duration: 2500,     delay: 100, reset: true })
 
 /*===== INDEX =====*/ 
@@ -50,6 +51,23 @@ sr.reveal(`#servicessub__boxs8`,{origin: 'bottom',delay: 1700 })
 
 
 
+/*===== MEET THE TEAM =====*/ 
+sr.reveal(`#meettheteam__title`,{origin: 'left',delay: 200})
+
+sr.reveal(`.teamonedetails1`,{origin: 'left',delay: 400})
+sr.reveal(`.teamonedetails2`,{origin: 'left',delay: 600})
+sr.reveal(`.teamonedetails3`,{origin: 'left',delay: 800})
+
+sr.reveal(`#timg1`,{origin: 'top',delay: 1000})
+sr.reveal(`#timg2`,{origin: 'bottom',delay: 1200})
+sr.reveal(`#timg3`,{origin: 'bottom'})
+
+
+/*===== WHY CHOOSE US =====*/ 
+
+sr.reveal(`#whychooseus__title`,{origin: 'left',delay: 200})
+sr.reveal(`.questions__group`,{origin: 'left',delay: 400})
+
 
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId)=>
@@ -84,6 +102,42 @@ navLink.forEach(n=>n.addEventListener('click',linkAction))
 
 
 
+/*=============== QUESTIONS ACCORDION ===============*/
+const accordionItems = document.querySelectorAll('.questions__item')
+
+accordionItems.forEach((item) =>{
+    const accordionHeader = item.querySelector('.questions__header')
+
+    accordionHeader.addEventListener('click', () =>{
+        const openItem = document.querySelector('.accordion-open')
+
+        toggleItem(item)
+
+        if(openItem && openItem!== item){
+            toggleItem(openItem)
+        }
+    })
+})
+
+const toggleItem = (item) =>{
+    const accordionContent = item.querySelector('.questions__content')
+
+    if(item.classList.contains('accordion-open')){
+        accordionContent.removeAttribute('style')
+        item.classList.remove('accordion-open')
+    }else{
+        accordionContent.style.height = accordionContent.scrollHeight + 'px'
+        item.classList.add('accordion-open')
+    }
+
+}
+
+
+
+
+
+
+
 
 
 let slideIndex = 0;
@@ -105,6 +159,8 @@ function showSlides() {
   dots[slideIndex-1].className += " active2";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+
 
 
 

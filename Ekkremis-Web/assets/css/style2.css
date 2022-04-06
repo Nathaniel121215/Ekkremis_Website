@@ -203,10 +203,6 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
-  .nav__logo2
-  {
-    display: none;
-  }
 
 }
   .nav__item
@@ -217,13 +213,14 @@ img {
   .nav__logo
   {
     font-weight: var(--font-semi-bold);
+    display: none;
     
   }
 
   .nav__logo2
   {
     max-width: 100px;
-    display: none;
+
   }
 
   .nav__toggle
@@ -525,4 +522,19 @@ main
   }
 
 
+}
+
+
+
+@media screen and (min-width: 1250px)
+{
+
+
+  .footer__container
+    {
+      gap: 80px;
+       
+    } 
+
+  
 }
