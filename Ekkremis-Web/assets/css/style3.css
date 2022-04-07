@@ -289,7 +289,10 @@ img {
 }
 
 /*===== MEET THE TEAM =====*/
-
+.meettheteam
+{
+  overflow: hidden;
+}
 #meettheteam__title
 { 
   margin-top: 2rem;
@@ -300,7 +303,6 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 30px;
   margin-top: 3rem;
-  min-height: 650px;
 
 }
 
@@ -319,6 +321,7 @@ img {
   font-size: var(--smaller-font-size);
   padding-bottom: 3rem;
   
+  
 }
 
 .teamoneimg
@@ -334,7 +337,7 @@ img {
   height: 100%;
   min-width: 100px;
   object-fit: cover;
-  transition: 5s;
+  transition: .5s;
 
 }
 
@@ -342,10 +345,11 @@ img {
 #meettheteam2
 {
   margin: 0; 
+  
 }
 #meettheteam2container
 {
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -360,10 +364,15 @@ img {
 
 .teamoneimg2
 {
+  
   display: flex;
   gap:15px;
 
 
+}
+.team__imgs:hover
+{
+  transform: translateY(-.9rem);
 }
 
 /* ===== WHY CHOOSE US =====*/
@@ -405,23 +414,28 @@ img {
 /*=============== QUESTIONS ===============*/
 .questions{
   background-color: #6AB1E1;
+  
 }
 
 .questions__container{
-  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(2, 1fr);*/
   gap: 1.5rem;
   padding: 1.5rem 0;
 }
 
-.questions__container{
+.questions__container
+{
+  
   align-items: flex-start;
+  
 }
 
 .questions__group{
   
   display: grid;
   gap: 30px;
-  
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  align-items: flex-start;
   
 }
 
@@ -666,6 +680,11 @@ main
     gap: 0px;
   }
 
+  .questions__group
+  {
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  }
+
 
   
 }
@@ -674,10 +693,7 @@ main
 
 @media screen and (min-width: 1250px)
 {
-  .meettheteam
-  {
-    height: 100vh;
-  }
+  .meettheteam__container2,
   .meettheteam__container
   {
     gap: 50px;
