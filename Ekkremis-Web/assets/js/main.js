@@ -1,6 +1,5 @@
 
 
-
 const sr = ScrollReveal({     distance: '60px',     duration: 2500,     delay: 100})
 
 /*===== INDEX =====*/ 
@@ -168,8 +167,6 @@ function showSlides() {
   dots[slideIndex-1].className += " active2";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
-
-
 
 
 
