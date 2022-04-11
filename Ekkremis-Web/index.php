@@ -1,8 +1,14 @@
 <?php
 
-    require 'php/PHPMailer.php'
-    require 'php/SMTP.php'
-    require 'php/Exception.php'
+
+
+    if(isset($_POST['test'])) 
+    
+    {
+
+    require 'assets/php/PHPMailer.php'
+    require 'assets/php/SMTP.php'
+    require 'assets/php/Exception.php'
 
     use PHPMailer\PHPMailer\PHPMailer;
     use SMTP\SMTP\SMTP;
@@ -33,6 +39,8 @@
     $mail -> Body = "test body of message";
 
     $mail -> smtpClose();
+    }
+    
 
 ?>
 
