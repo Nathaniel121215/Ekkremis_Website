@@ -30,7 +30,7 @@
             <nav class="nav bd-grid">
                 <a href="#" class="nav__logo">EKKREMIS INC.</a>
                 <div class="nav__logo2" id="nav-nav__logo2">
-                    <img src="assets/images/illustration folder/company logos/EkkremisLogo.png" alt="" class="home__img__logo">
+                    <a href="#"><img src="assets/images/illustration folder/company logos/EkkremisLogo.png" alt="" class="home__img__logo"></a>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bxs-grid'></i>

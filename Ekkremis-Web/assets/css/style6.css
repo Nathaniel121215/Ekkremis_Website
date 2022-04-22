@@ -575,15 +575,22 @@ main
   .homepage__background
   {
     min-height: 45rem;
-    background: url('assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/recruitment.png') no-repeat center/cover;
+  }
+  #recruitment_bd
+  {
+    background: url('/assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/recruitment.png') no-repeat center/cover;
+  }
+  #employees_bd
+  {
+    background: url('/assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/employee.png') no-repeat center/cover;
   }
   
   .main__container
   {
+    margin-top: 0rem;
     display: block;
     
-    
-    
+
   }
 
   .second__container

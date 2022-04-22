@@ -84,6 +84,15 @@ sr.reveal(`.mainbox2`,{origin: 'left',delay: 600})
 sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 800})
 
 
+/*===== HRIS FEATURE =====*/ 
+
+sr.reveal(`.homepage__data`,{origin: 'left',delay: 200})
+sr.reveal(`.first__img`,{origin: 'bottom',delay: 500})
+
+sr.reveal(`.second__box1`,{origin: 'bottom',delay: 200})
+sr.reveal(`.second__box2`,{origin: 'bottom',delay: 400})
+
+
 
 
 /*===== MENU SHOW =====*/ 
