@@ -121,7 +121,7 @@ img {
 
 .section
 {
-  padding: 5rem 0 2rem;
+  padding: 2.5rem 0 2rem;
 }
 
 .section-title
@@ -131,7 +131,6 @@ img {
   margin-bottom: var(--mb-4);
   letter-spacing: .1rem;
 
-
 }
 
 
@@ -140,7 +139,7 @@ img {
 
   content: '';
   position: absolute;
-  width: 80px;
+  width: 100px;
   height: .18rem;
   top:-1rem;
   background-color: var(--dark-color);
@@ -204,6 +203,7 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
+  
 
 }
   .nav__item
@@ -221,7 +221,7 @@ img {
   .nav__logo2
   {
     max-width: 100px;
-
+  
   }
 
   .nav__toggle
@@ -239,6 +239,11 @@ img {
   .nav__link:hover
   {
     color:rgb(61, 104, 149);
+    
+  }
+  #fix
+  {
+    order: 1;
     
   }
 
@@ -289,121 +294,125 @@ img {
   transform: translateY(-.25rem);
 }
 
-/*===== SERVICES =====*/
-.servicesmain__container
+/*===== Recruitment =====*/
+
+
+.homepage
 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 30px;
-  margin-bottom: 2rem;
+
 }
-#services__title
+.homepage__background
+{
+  min-height: 25rem;
+  background-color: #3D6895;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage__data
 { 
-  margin-top: 2rem;
+  max-width: 400px;
 }
-.servicesmain__title
-{
-  font-size: var(--sub-font-size);
-  font-weight: var(--font-semi-bold);
-  padding-bottom: 10px;
-}
-.services__details
-{
 
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight: var(--font-medium);
+.main__container
+{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage___title
+{
+  color: var(--white-color);
+  margin-bottom: .4rem;
+  font-size: var(--bigger-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.homepage___description
+{
+  color: var(--white-color);
+  margin-bottom: .8rem;
   font-size: var(--normal-font-size);
-  margin-bottom: 2rem;
+  font-weight: var(--font-medium);
+}
+
+/*===== Recruitment =====*/
+.first__preview
+{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #F7F8F9;
+}
+.first__preview__container
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   
 }
 
-.servicesmain__box
+.first__img
 {
-  border: 1px solid #cacaca;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 0.3rem;
-}
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .8rem;
+  width: 75rem;
 
-.servicesmain__description
-{
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
-  padding-bottom: 13px;
-
-}
-
-.button__services
-{
-  background-color: #6AB1E1;
-  display: inline-block;
-  padding: .6rem 2.1rem;
-  font-weight: var(--font-medium);
-  transition: .3s;
-  color: white;
-  border-radius: 0.3rem;
-}
-
-.button__services:hover{
-  transform: translateY(-.25rem);
-}
-
-/*===== SERVICES SUB =====*/
-
-.servicessub__container
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 30px;
-} 
-
-.servicessub__box
-{
   
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 0.3rem;
-  transition: .3s;
-  height: 100%;
-  border: 1px solid #cacaca;
 }
 
-.servicessub__box:hover
+/*===== Recruitment =====*/
+.second__box1
 {
-  transform: translateY(-.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second
+{
+  border-top: .8px solid #cccccc;
+ 
+}
+#second2
+{
+  background-color: #F7F8F9;
+}
+.second__container
+{
+  position: relative;
+  gap: 1rem;
+  
 }
 
-.servicessub__title
+.sub__img
 {
-  font-size: var(--sub-font-size);
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .5rem;
+  margin-bottom: .8rem;
+ 
+}
+
+.header__title
+{
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  padding-bottom: 1rem;
+}
+.sub__details
+{
+  font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
-
-.servicessub__description
+.description__details
 {
-  text-align: justify;
-  text-justify: inter-word;
+  font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
-  padding-bottom: 13px;
-
+  padding-bottom: 1rem;
 }
-
-.servicesub__icons
-{
-  max-width: 70px;
-  margin-bottom: .5rem;
-}
-
-
 
 /* ===== FOOTER =====*/
 
@@ -417,6 +426,7 @@ img {
 .footer__container
 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ 
   
   
 }
@@ -513,13 +523,12 @@ main
 }
 
 
-
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 801px)
 {
   .home
   {
-    border: red 1px solid;
+
   }
   .bd-grid
   {
@@ -534,12 +543,12 @@ main
 
   .section
   {
-    padding: 6rem 0 3rem;
+    padding: 3rem 0 3rem;
   }
 
   .section-title::after
   {
-    width: 110px;
+    width: 150px;
   }
   .nav
   {
@@ -563,6 +572,45 @@ main
     display: none;
   }
 
+  .homepage__background
+  {
+    min-height: 45rem;
+    background: url('assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/recruitment.png') no-repeat center/cover;
+  }
+  
+  .main__container
+  {
+    display: block;
+    
+    
+    
+  }
+
+  .second__container
+  {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .second__container
+  {
+    gap: 4rem;
+  }
+
+  #fix
+  {
+    order: 0;
+  }
+
+
+
+
+  
+}
+
+@media screen and (min-width: 750px)
+{
+
 
 }
 
@@ -575,8 +623,18 @@ main
   .footer__container
     {
       gap: 80px;
-       
+      
+      
     } 
+  .second__container
+    {
+      gap: 8rem;
+    }
 
   
 }
+
+
+
+
+

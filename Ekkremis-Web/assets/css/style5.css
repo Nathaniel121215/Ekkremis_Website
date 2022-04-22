@@ -131,7 +131,6 @@ img {
   margin-bottom: var(--mb-4);
   letter-spacing: .1rem;
 
-
 }
 
 
@@ -140,7 +139,7 @@ img {
 
   content: '';
   position: absolute;
-  width: 80px;
+  width: 100px;
   height: .18rem;
   top:-1rem;
   background-color: var(--dark-color);
@@ -204,6 +203,7 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
+  
 
 }
   .nav__item
@@ -221,7 +221,7 @@ img {
   .nav__logo2
   {
     max-width: 100px;
-
+  
   }
 
   .nav__toggle
@@ -289,122 +289,69 @@ img {
   transform: translateY(-.25rem);
 }
 
-/*===== SERVICES =====*/
-.servicesmain__container
+/*===== HIRS =====*/
+.HIRS
 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 30px;
-  margin-bottom: 2rem;
+min-height: 50rem;
 }
-#services__title
-{ 
-  margin-top: 2rem;
-}
-.servicesmain__title
+.HIRS__container
 {
-  font-size: var(--sub-font-size);
-  font-weight: var(--font-semi-bold);
-  padding-bottom: 10px;
+    gap: 3rem;
+                                                                                              
 }
-.services__details
+.HIRS__title
 {
-
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight: var(--font-medium);
-  font-size: var(--normal-font-size);
-  margin-bottom: 2rem;
-  
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5rem;
 }
-
-.servicesmain__box
+.HIRS__details
 {
-  border: 1px solid #cacaca;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 0.3rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    margin-bottom: 1.5rem;
 }
 
-.servicesmain__description
+.HIRS__box2
 {
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
-  padding-bottom: 13px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
 
 }
 
-.button__services
+.mainbutton1
 {
-  background-color: #6AB1E1;
-  display: inline-block;
-  padding: .6rem 2.1rem;
-  font-weight: var(--font-medium);
-  transition: .3s;
-  color: white;
-  border-radius: 0.3rem;
+    background-color: #6AB1E1;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    border-radius: .2rem;
+    padding: .8rem .5rem;
+    transition: .3s;
 }
 
-.button__services:hover{
-  transform: translateY(-.25rem);
-}
-
-/*===== SERVICES SUB =====*/
-
-.servicessub__container
+.mainbutton1:hover
 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 30px;
-} 
-
-.servicessub__box
-{
-  
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border-radius: 0.3rem;
-  transition: .3s;
-  height: 100%;
-  border: 1px solid #cacaca;
+    transform: translateY(-.25rem);
 }
 
-.servicessub__box:hover
+.hrisbutton
 {
-  transform: translateY(-.25rem);
+    color: white;
 }
 
-.servicessub__title
+.mainbox2
 {
-  font-size: var(--sub-font-size);
-  font-weight: var(--font-semi-bold);
-  padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: .8rem;
+    margin-top: 2rem;
 }
-
-.servicessub__description
-{
-  text-align: justify;
-  text-justify: inter-word;
-  font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
-  padding-bottom: 13px;
-
-}
-
-.servicesub__icons
-{
-  max-width: 70px;
-  margin-bottom: .5rem;
-}
-
-
-
 /* ===== FOOTER =====*/
 
 .footer
@@ -417,6 +364,7 @@ img {
 .footer__container
 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ 
   
   
 }
@@ -513,13 +461,12 @@ main
 }
 
 
-
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 801px)
 {
   .home
   {
-    border: red 1px solid;
+
   }
   .bd-grid
   {
@@ -539,7 +486,7 @@ main
 
   .section-title::after
   {
-    width: 110px;
+    width: 150px;
   }
   .nav
   {
@@ -563,6 +510,16 @@ main
     display: none;
   }
 
+  
+}
+
+@media screen and (min-width: 750px)
+{
+  .HIRS__container
+{
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
 
 }
 
@@ -575,8 +532,14 @@ main
   .footer__container
     {
       gap: 80px;
-       
+      
+      
     } 
 
   
 }
+
+
+
+
+

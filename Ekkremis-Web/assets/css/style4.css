@@ -8,7 +8,8 @@
   
   /*===== Font weight =====*/
 
-  --font-medium:500;
+  --font-medium:400;
+  --font-medium2:500;
   --font-semi-bold:600;
   --font-bold:700;
   
@@ -222,7 +223,7 @@ img {
   .nav__link
   {
     color: var(--dark-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-medium2);
     font-size: var(--smaller-font-size);
   }
   .nav__link:hover
@@ -282,11 +283,11 @@ img {
 {
   border: none;
   display: inline-block;
-  background-color: #3D6895;
+  background-color: #6AB1E1;
   color: #FFF;
   padding: 1rem 1.75rem;
   border-radius: .3rem;
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
   transition: .3s;
 }
 
@@ -298,7 +299,7 @@ img {
 
 .sendbutton:hover
 {
-    background-color: #6AB1E1;
+   background-color: #3D6895;
 }
 
 .button__icon{
@@ -335,7 +336,7 @@ img {
 .contact__subtitle
 {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     color: rgb(63, 63, 63);
     margin-bottom: .3rem;
 }
@@ -379,6 +380,7 @@ img {
     width: 100%;
     font-size: var(--smaller-font-size);
     transition: .3s;
+    font-weight: var(--font-medium2);
   }
 
   .contact__area{
@@ -389,18 +391,29 @@ img {
     resize: none;
   }
 
+  textarea
+  {
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+  }
+  input
+  {
+    font-family: var(--body-font);
+    font-size: var(--smaller-font-size);
+  }
+
 /*Input focus move up label*/
 .contact__input:focus + .contact__label{
     top: -.75rem;
     left: 0;
-    font-size: var(--smaller-font-size);
+    font-size: 12px;
     z-index: 10;
   }
   
   /*Input focus sticky top label*/
   .contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
     top: -.75rem;
-    font-size: var(--smaller-font-size);
+    font-size: 12px;
     z-index: 10;
   }
 
@@ -418,10 +431,6 @@ img {
     height: 550px;
     width: 100%;
 }
-
-
-
-
 
 
 /* ===== FOOTER =====*/
@@ -531,6 +540,15 @@ main
   border-radius: .5rem;
 }
 
+.sent-notification
+{
+  display: none;
+  font-size: var(--normal-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 801px)
@@ -592,6 +610,8 @@ main
 .contactus__container
 {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 1rem;
+    
 } 
 #map 
 {

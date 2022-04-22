@@ -1,6 +1,5 @@
 
-
-const sr = ScrollReveal({     distance: '60px',     duration: 2500,     delay: 100})
+const sr = ScrollReveal({     distance: '60px',     duration: 3500,     delay: 100})
 
 /*===== INDEX =====*/ 
 
@@ -66,6 +65,25 @@ sr.reveal(`#timg3`,{origin: 'bottom'})
 
 sr.reveal(`#whychooseus__title`,{origin: 'left',delay: 200})
 sr.reveal(`.questions__group`,{origin: 'left',delay: 400})
+
+
+/*===== CONTACT US =====*/ 
+sr.reveal(`.contactus__title`,{origin: 'left',delay: 200})
+sr.reveal(`.contact__data`,{origin: 'left',delay: 400})
+sr.reveal(`.contact__form`,{origin: 'left',delay: 600})
+
+sr.reveal(`.mapsec`,{origin: 'bottom',delay: 1000})
+
+
+
+/*===== HRIS =====*/ 
+sr.reveal(`.HIRS__title`,{origin: 'left',delay: 200})
+sr.reveal(`.HIRS__details`,{origin: 'left',delay: 400})
+sr.reveal(`.mainbox2`,{origin: 'left',delay: 600})
+
+sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 800})
+
+
 
 
 /*===== MENU SHOW =====*/ 

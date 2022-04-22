@@ -8,7 +8,8 @@
   
   /*===== Font weight =====*/
 
-  --font-medium:500;
+  --font-medium:400;
+  --font-medium2:500;
   --font-semi-bold:600;
   --font-bold:700;
   
@@ -130,7 +131,6 @@ img {
   margin-bottom: var(--mb-4);
   letter-spacing: .1rem;
 
-
 }
 
 
@@ -233,7 +233,7 @@ img {
   .nav__link
   {
     color: var(--dark-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-medium2);
     font-size: var(--smaller-font-size);
   }
   .nav__link:hover
@@ -294,6 +294,8 @@ img {
 {
   background-color: var(--dark-color-lighten);
   overflow: hidden;
+  border: 1px solid red;
+  
 
 }
 .home__data
@@ -317,29 +319,19 @@ img {
 
 #firstimg
 {
-    background: 
-  /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(2, 40, 91, .5), 
-      rgba(2, 40, 91, .5)
-    ),
-    url('/assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 1.jpeg') no-repeat center/cover;
+
     text-align: center;    
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+ 
 }
 
 #secondimg
 {
-  background: 
-  /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(2, 40, 91, .5), 
-      rgba(2, 40, 91, .5)
-    ),
-    url('/assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 2.jpg') no-repeat center/cover;
+
     text-align: center;    
     height: 100vh;
     display: flex;
@@ -349,13 +341,7 @@ img {
 
 #thirdimg
 {
-  background: 
-  /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(2, 40, 91, .5), 
-      rgba(2, 40, 91, .5)
-    ),
-    url('/assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 3.jpg') no-repeat center/cover;
+
     text-align: center;    
     height: 100vh;
     display: flex;
@@ -450,13 +436,13 @@ img {
   text-align: justify;
   text-justify: inter-word;
   font-weight: var(--font-medium);
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .company_name
 {
   font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semi-bold);
 }
 
 .company_sub
