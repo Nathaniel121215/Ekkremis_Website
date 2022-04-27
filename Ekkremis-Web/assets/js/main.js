@@ -58,7 +58,10 @@ sr.reveal(`.teamonedetails3`,{origin: 'left',delay: 800})
 
 sr.reveal(`#timg1`,{origin: 'top',delay: 1000})
 sr.reveal(`#timg2`,{origin: 'bottom',delay: 1200})
-sr.reveal(`#timg3`,{origin: 'bottom'})
+
+sr.reveal(`.show_3`,{origin: 'bottom',delay: 1300})
+sr.reveal(`.show_4`,{origin: 'left',delay: 1400})
+sr.reveal(`.show_5`,{origin: 'left',delay: 1500})
 
 
 /*===== WHY CHOOSE US =====*/ 

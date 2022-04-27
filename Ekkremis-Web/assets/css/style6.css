@@ -410,6 +410,8 @@ img {
 }
 .description__details
 {
+  text-align: justify;
+  text-justify: inter-word;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   padding-bottom: 1rem;
