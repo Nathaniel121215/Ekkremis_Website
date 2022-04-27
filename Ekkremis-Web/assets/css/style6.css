@@ -360,7 +360,7 @@ img {
   border: .01px solid rgb(211, 211, 211);
   border-radius: .8rem;
   width: 75rem;
-
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   
 }
 
@@ -392,6 +392,7 @@ img {
   border: .01px solid rgb(211, 211, 211);
   border-radius: .5rem;
   margin-bottom: .8rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
  
 }
 
@@ -578,12 +579,34 @@ main
   }
   #recruitment_bd
   {
-    background: url('/assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/recruitment.png') no-repeat center/cover;
+    background: url('recruitment.png') no-repeat center/cover;
+
   }
   #employees_bd
   {
-    background: url('/assets/images/HRIS-IMAGES/IMAGE_PER_MODULE/employee.png') no-repeat center/cover;
+    background: url('employee.png') no-repeat center/cover;
   }
+
+  #attendances_bd
+  {
+    background: url('attendance.png') no-repeat center/cover;
+  }
+
+  #leaves_bd
+  {
+    background: url('leaves.png') no-repeat center/cover;
+  }
+
+  #timesheets_bd
+  {
+    background: url('timesheet.png') no-repeat center/cover;
+  }
+
+  #payroll_bd
+  {
+    background: url('payroll.png') no-repeat center/cover;
+  }
+  
   
   .main__container
   {

@@ -290,22 +290,23 @@ img {
 }
 
 /*===== HIRS =====*/
-.HIRS
+.HIMS
 {
-min-height: 50rem;
+  min-height: 45rem;
 }
-.HIRS__container
+.HIMS__container
 {
-    gap: 3rem;
+  gap: 4rem;
+    
                                                                                               
 }
-.HIRS__title
+.HIMS__title
 {
     font-size: var(--bigger-font-size);
     font-weight: var(--font-bold);
     margin-bottom: 1.5rem;
 }
-.HIRS__details
+.HIMS__details
 {
     text-align: justify;
     text-justify: inter-word;
@@ -314,45 +315,108 @@ min-height: 50rem;
     margin-bottom: 1.5rem;
 }
 
-.HIRS__box2
+.HIMS__box2
 {
     display: flex;
-    
     align-items: center;
     justify-content: center;
 
 
+
 }
 
-.mainbutton1
+
+.bold__des
 {
-    background-color: #6AB1E1;
-    text-align: center;
-    font-size: var(--smaller-font-size);
-    font-weight: var(--font-semi-bold);
-    border-radius: .2rem;
-    padding: .8rem .5rem;
-    transition: .3s;
+  font-weight: var(--font-semi-bold);
 }
 
-.mainbutton1:hover
+/* ===== SEUB =====*/
+
+.second__box1
 {
-    transform: translateY(-.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.second__box2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.second
+{
+  border-top: .8px solid #cccccc;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+ 
+}
+#second2
+{
+  background-color: #F7F8F9;
+}
+.second__container
+{
+  position: relative;
+  gap: 1rem;
+  
 }
 
-.hrisbutton
+
+.header__title
 {
-    color: white;
-    
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  padding-bottom: 1rem;
+}
+.sub__details
+{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  padding-bottom: 1rem;
+}
+.description__details
+{
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  padding-bottom: 1rem;
+  
 }
 
-.mainbox2
+.description__details2 li
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: .8rem;
-    margin-top: 2rem;
+
+  padding-bottom: 1rem;
+  
 }
+
+.sub__img
+{
+  max-width: 350px;
+}
+
+#benefit_box
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.check
+{
+  padding-left: 1.5rem;
+}
+
+
 /* ===== FOOTER =====*/
 
 .footer
@@ -511,15 +575,33 @@ main
     display: none;
   }
 
+  .second__container
+  {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .second__container
+  {
+    gap: 4rem;
+  }
+
+  #fix
+  {
+    order: -1;
+  }
+
+
   
 }
 
 @media screen and (min-width: 750px)
 {
-  .HIRS__container
+  .HIMS__container
 {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 2rem;
+  
 }
 
 }
@@ -536,6 +618,7 @@ main
       
       
     } 
+   
 
   
 }

@@ -10,10 +10,10 @@
         
         <link rel="stylesheet" href="assets/css/style4.css">
 
-        <!-- ===== BOX ICONS ===== -->
+        <!--=============== Small Icon ===============-->
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/images/illustration folder/company logos/Elogo.png" type="image/x-icon">
+
 
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -66,7 +66,7 @@
                             <h4 class="contact__subtitle">Call us for instant support</h4>
                             <span class="contact__description">
                                 <i class="ri-phone-line contact__icon"></i>
-                                09198240056
+                                (02) 8403-0133
                             </span>
                         </div>
                         
@@ -74,7 +74,7 @@
                             <h4 class="contact__subtitle">Write us by mail</h4>
                             <span class="contact__description">
                                 <i class="ri-mail-line contact__icon"></i>
-                                user@gmail.com
+                                info@ekkremis.com
                             </span>
                         </div>
                     </div>
@@ -165,14 +165,15 @@
                         <a href="#" class="footer__social"><i class="bx bxl-instagram"></i></a>
                         <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
                         <a href="#" class="footer__social"><i class="bx bxl-google"></i></a>
-
-                        <script language="JavaScript" src="http://dunsregistered.dnb.com" type="text/javascript"></script>
+                        <br>
+                        <script language="JavaScript" src="https://dunsregistered.dnb.com" type="text/javascript"></script> 
                     </div>
 
     
                 </div>
 
-                <p class="footer__copy">2022 Ekkremis Inc. All right reserved </p>
+                <p class="footer__copy">EXCELLENT SOLUTIONS MADE POSSIBLE <br>
+                    ©COPYRIGHT 2019.ALL RIGHTS RESERVED.</p>
 
               </footer>
 

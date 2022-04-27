@@ -31,80 +31,6 @@ sr.reveal(`#client7`,{origin: 'bottom', interval: 2200, delay: 1400})
 sr.reveal(`#client8`,{origin: 'bottom', interval: 2200, delay: 1600})
 
 
-/*===== SERVICE =====*/ 
-
-sr.reveal(`#services__title`,{origin: 'left',delay: 200})
-sr.reveal(`.services__details`,{origin: 'left',delay: 400 })
-sr.reveal(`#main__box1`,{origin: 'bottom', delay: 600 })
-sr.reveal(`#main__box2`,{origin: 'bottom',delay: 800 })
-
-sr.reveal(`#servicessub__boxs1`,{origin: 'bottom',delay: 1000 })
-sr.reveal(`#servicessub__boxs2`,{origin: 'bottom',delay: 1100 })
-sr.reveal(`#servicessub__boxs3`,{origin: 'bottom',delay: 1200 })
-sr.reveal(`#servicessub__boxs4`,{origin: 'bottom',delay: 1300 })
-sr.reveal(`#servicessub__boxs5`,{origin: 'bottom',delay: 1400 })
-sr.reveal(`#servicessub__boxs6`,{origin: 'bottom',delay: 1500 })
-sr.reveal(`#servicessub__boxs7`,{origin: 'bottom',delay: 1600 })
-sr.reveal(`#servicessub__boxs8`,{origin: 'bottom',delay: 1700 })
-
-
-
-/*===== MEET THE TEAM =====*/ 
-sr.reveal(`#meettheteam__title`,{origin: 'left',delay: 200})
-
-sr.reveal(`.teamonedetails1`,{origin: 'left',delay: 400})
-sr.reveal(`.teamonedetails2`,{origin: 'left',delay: 600})
-sr.reveal(`.teamonedetails3`,{origin: 'left',delay: 800})
-
-sr.reveal(`#timg1`,{origin: 'top',delay: 1000})
-sr.reveal(`#timg2`,{origin: 'bottom',delay: 1200})
-sr.reveal(`#timg3`,{origin: 'bottom'})
-
-
-/*===== WHY CHOOSE US =====*/ 
-
-sr.reveal(`#whychooseus__title`,{origin: 'left',delay: 200})
-sr.reveal(`.questions__group`,{origin: 'left',delay: 400})
-
-
-/*===== CONTACT US =====*/ 
-sr.reveal(`.contactus__title`,{origin: 'left',delay: 200})
-sr.reveal(`.contact__data`,{origin: 'left',delay: 400})
-sr.reveal(`.contact__form`,{origin: 'left',delay: 600})
-
-sr.reveal(`.mapsec`,{origin: 'bottom',delay: 1000})
-
-
-
-/*===== HRIS =====*/ 
-sr.reveal(`.HIRS__title`,{origin: 'left',delay: 200})
-sr.reveal(`.HIRS__details`,{origin: 'left',delay: 400})
-sr.reveal(`.mainbox2`,{origin: 'left',delay: 600})
-
-sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 800})
-
-
-/*===== HRIS FEATURE =====*/ 
-
-sr.reveal(`.homepage__data`,{origin: 'left',delay: 200})
-sr.reveal(`.first__img`,{origin: 'bottom',delay: 500})
-
-sr.reveal(`.second__box1`,{origin: 'bottom',delay: 200})
-sr.reveal(`.second__box2`,{origin: 'bottom',delay: 400})
-
-/*===== HIMS FEATURE =====*/ 
-
-sr.reveal(`#show1`,{origin: 'left',delay: 200})
-sr.reveal(`#show2`,{origin: 'left',delay: 400})
-sr.reveal(`#show3`,{origin: 'left',delay: 600})
-sr.reveal(`#show4`,{origin: 'left',delay: 800})
-sr.reveal(`#show5`,{origin: 'bottom',delay: 1000})
-
-
-
-
-
-
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId)=>
 {
@@ -179,3 +105,50 @@ window.addEventListener('scroll', scrollUp)
 
 
 
+
+
+
+
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active2";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+
+
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
