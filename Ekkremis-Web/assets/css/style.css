@@ -541,15 +541,16 @@ img {
   align-items: center;
   transition: .3s;
   border: #cccccc .8px solid;
+  min-width: 250px;
   
 }
 .clients__box
 {
-
-  padding-top: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .client:hover
@@ -748,13 +749,15 @@ main
 
     .clients__img
   {
-    max-width:130px;
+    max-width:150px;
+  }
+  .client
+  {
+    
   }
   .clients__box
   {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
-    gap: 30px;
+    
   }
 
 
