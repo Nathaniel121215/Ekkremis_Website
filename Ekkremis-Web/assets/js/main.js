@@ -1,36 +1,6 @@
 
 const sr = ScrollReveal({     distance: '60px',     duration: 3500,     delay: 100})
 
-/*===== INDEX =====*/ 
-
-sr.reveal(`#aboutus_title`,{origin: 'left', interval: 2200, delay: 200 })
-sr.reveal(`#img1`,{origin: 'top', interval: 2200, delay: 400})
-sr.reveal(`#img2`,{origin: 'bottom', interval: 2200, delay: 600})
-sr.reveal(`#details__one`,{origin: 'right', interval: 2200, delay: 800})
-
-
-sr.reveal(`#details__two`,{origin: 'left', interval: 2200, delay: 200})
-sr.reveal(`#img3`,{origin: 'top', interval: 2200, delay: 400})
-sr.reveal(`#img4`,{origin: 'bottom', interval: 2200, delay: 600})
-
-
-sr.reveal(`.Core__title`,{origin: 'left', interval: 2200})
-sr.reveal(`#value1`,{origin: 'bottom', interval: 2200, delay: 200})
-sr.reveal(`#value2`,{origin: 'bottom', interval: 2200, delay: 400})
-sr.reveal(`#value3`,{origin: 'bottom', interval: 2200, delay: 600})
-sr.reveal(`#value4`,{origin: 'bottom', interval: 2200, delay: 800})
-
-sr.reveal(`.Client__title`,{origin: 'left', interval: 2200});
-sr.reveal(`#client1`,{origin: 'bottom', interval: 2200, delay: 200})
-sr.reveal(`#client2`,{origin: 'bottom', interval: 2200, delay: 400})
-sr.reveal(`#client3`,{origin: 'bottom', interval: 2200, delay: 600})
-sr.reveal(`#client4`,{origin: 'bottom', interval: 2200, delay: 800})
-sr.reveal(`#client5`,{origin: 'bottom', interval: 2200, delay: 1000})
-sr.reveal(`#client6`,{origin: 'bottom', interval: 2200, delay: 1200})
-sr.reveal(`#client7`,{origin: 'bottom', interval: 2200, delay: 1400})
-sr.reveal(`#client8`,{origin: 'bottom', interval: 2200, delay: 1600})
-
-
 /*===== SERVICE =====*/ 
 
 sr.reveal(`#services__title`,{origin: 'left',delay: 200})
@@ -55,13 +25,14 @@ sr.reveal(`#meettheteam__title`,{origin: 'left',delay: 200})
 sr.reveal(`.teamonedetails1`,{origin: 'left',delay: 400})
 sr.reveal(`.teamonedetails2`,{origin: 'left',delay: 600})
 sr.reveal(`.teamonedetails3`,{origin: 'left',delay: 800})
+sr.reveal(`.teamonedetails4`,{origin: 'left',delay: 1000})
 
-sr.reveal(`#timg1`,{origin: 'top',delay: 1000})
-sr.reveal(`#timg2`,{origin: 'bottom',delay: 1200})
+sr.reveal(`#timg1`,{origin: 'top',delay: 1200})
+sr.reveal(`#timg2`,{origin: 'bottom',delay: 1400})
 
 sr.reveal(`.show_3`,{origin: 'bottom',delay: 1300})
-sr.reveal(`.show_4`,{origin: 'left',delay: 1400})
-sr.reveal(`.show_5`,{origin: 'left',delay: 1500})
+sr.reveal(`.teamone2`,{origin: 'left',delay: 1500})
+
 
 
 /*===== WHY CHOOSE US =====*/ 
@@ -102,6 +73,7 @@ sr.reveal(`#show2`,{origin: 'left',delay: 400})
 sr.reveal(`#show3`,{origin: 'left',delay: 600})
 sr.reveal(`#show4`,{origin: 'left',delay: 800})
 sr.reveal(`#show5`,{origin: 'bottom',delay: 1000})
+
 
 
 

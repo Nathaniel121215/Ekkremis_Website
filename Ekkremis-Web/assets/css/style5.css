@@ -433,6 +433,17 @@ main
   padding:5px 10px 5px 10px;
 }
 
+#icon-hover
+{
+  transition: .3s;
+}
+
+#icon-hover:hover
+{
+  transform: translateY(-.9rem);
+}
+
+
 .scrollup__icon{
   font-size: 1rem;
   color: #FFF;

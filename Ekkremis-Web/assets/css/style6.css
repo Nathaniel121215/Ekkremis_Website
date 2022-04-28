@@ -484,6 +484,16 @@ main
 {
   overflow: hidden;
 }
+#icon-hover
+{
+  transition: .3s;
+}
+
+#icon-hover:hover
+{
+  transform: translateY(-.9rem);
+}
+
 
 .scrollup
 {
@@ -581,32 +591,32 @@ main
   }
   #recruitment_bd
   {
-    background: url('recruitment.png') no-repeat center/cover;
+    background: url('recruitment.jpg') no-repeat center/cover;
 
   }
   #employees_bd
   {
-    background: url('employee.png') no-repeat center/cover;
+    background: url('employee.jpg') no-repeat center/cover;
   }
 
   #attendances_bd
   {
-    background: url('attendance.png') no-repeat center/cover;
+    background: url('attendance.jpg') no-repeat center/cover;
   }
 
   #leaves_bd
   {
-    background: url('leaves.png') no-repeat center/cover;
+    background: url('leaves.jpg') no-repeat center/cover;
   }
 
   #timesheets_bd
   {
-    background: url('timesheet.png') no-repeat center/cover;
+    background: url('timesheet.jpg') no-repeat center/cover;
   }
 
   #payroll_bd
   {
-    background: url('payroll.png') no-repeat center/cover;
+    background: url('payroll.jpg') no-repeat center/cover;
   }
   
   

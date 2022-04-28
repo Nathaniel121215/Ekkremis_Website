@@ -500,6 +500,17 @@ main
   overflow: hidden;
 }
 
+#icon-hover
+{
+  transition: .3s;
+}
+
+#icon-hover:hover
+{
+  transform: translateY(-.9rem);
+}
+
+
 .scrollup
 {
   position: fixed;
