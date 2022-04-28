@@ -28,7 +28,7 @@
         $mail->Subject = ($subject);
         $mail->Body = $message;
 
-        if (str_contains($email , '@')) 
+        if (str_contains($email,'@')) 
         {
         
             if ($mail->send()) {
