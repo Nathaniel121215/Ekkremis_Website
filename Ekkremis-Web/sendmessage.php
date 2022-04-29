@@ -28,8 +28,7 @@
         $mail->Subject = ($subject);
         $mail->Body = $message;
 
-        if (str_contains($email,'@')) 
-        {
+       
         
             if ($mail->send()) {
                 $status = "success";
@@ -39,11 +38,7 @@
                 $status = "failed";
                 $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
             }
-        }
-        else
-        {
-            
-        }
+        
    
         
 
