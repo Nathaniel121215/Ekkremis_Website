@@ -190,7 +190,7 @@ img {
 
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 849px)
 {
   .nav__menu
   {
@@ -377,7 +377,13 @@ img {
 
 .servicessub__box:hover
 {
-  transform: translateY(-.25rem);
+  transform: scale(1.06);
+  transition: .5s;
+  padding: 2rem;
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .4rem;
+  
+
   background-color: #6AB1E1;
   color: white;
 }
@@ -601,7 +607,7 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 801px)
+@media screen and (min-width: 850px)
 {
   .home
   {
@@ -647,6 +653,11 @@ main
   .nav__toggle
   {
     display: none;
+  }
+  .nav__logo2
+  {
+    max-width: 135px;
+
   }
 
 

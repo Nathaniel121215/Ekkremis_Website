@@ -40,6 +40,7 @@
                         <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="index.html" class="nav__link">About Us</a></li>
                         <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="systems.html" class="nav__link">Systems</a></li>
                         <li class="nav__item"><a href="meettheteam.html" class="nav__link">Meet the Team</a></li>
                         <li class="nav__item"><a href="#" class="nav__link  active">Contact Us</a></li>
                     </ul>
@@ -82,35 +83,9 @@
 
                 
                
-                    <form class="contact__form" id="myForm" onsubmit="return false">
-
-                        <h4 class="sent-notification"></h4>    
-        
-                            <div class="contact__inputs">
-                                <div class="contact__content">
-                                    <input type="email" placeholder=" " class="contact__input" id="email" required>
-                                    <label for="" class="contact__label">Email</label>
-                                </div>
-                                
-        
-                                <div class="contact__content">
-                                    <input type="text" placeholder=" " class="contact__input" id="subject" required>
-                                    <label for="" class="contact__label">Subject</label>
-                                </div>
-        
-                                <div class="contact__content contact__area">
-                                    <textarea placeholder=" " class="contact__input" id="message" required></textarea>
-                                    <label for="" class="contact__label">Message</label>
-                                </div>
-                            </div>
-        
-                            <button class="sendbutton" type="submit" onclick="sendEmail()" value="Send An Email">
-                                Send Message
-                                <i class="ri-arrow-right-up-line button__icon"></i>
-        
-                            </button>
-        
-                        </form>
+                <div>
+                    
+                </div>
 
                 
                 
@@ -145,6 +120,7 @@
                             <li><a href="index.html" class="footer__link">Home</a></li>
                             <li><a href="index.html" class="footer__link">About Us</a></li>
                             <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="systems.html" class="footer__link">Systems</a></li>
                             <li><a href="meettheteam.html" class="footer__link">Meet the Team</a></li>
                             <li><a href="#" class="footer__link">Contact Us</a></li>
                         </ul>
@@ -155,7 +131,7 @@
                         <h3 class="footer__title">SUPPORT</h3>
                         <ul>
                             <p class="footer__link">info@ekkremis.com</p>  
-                            <p class="footer__link">(02) 8403-0133</p>  
+                            <p class="footer__link">(02) 8280-0312</p>  
                         </ul>
                     </div>
     
@@ -171,7 +147,7 @@
     
                 </div>
 
-                <p class="footer__copy">EXCELLENT SOLUTIONS MADE POSSIBLE <br>
+                <p class="footer__copy">MAKE EXCELLENCE A HABIT<br>
                     ©COPYRIGHT 2022.ALL RIGHTS RESERVED.</p>
 
               </footer>
@@ -195,67 +171,6 @@
         <!--===== MAIN JS =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="assets/js/main.js"></script>
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> 
-        <script type="text/javascript">
-           
-        function sendEmail() {
-            var email = $("#email");
-            var subject = $("#subject");
-            var message = $("#message");
-
-      
-            if (isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(message)) {
-                $.ajax({
-                   url: 'sendmessage.php',
-                   method: 'POST',
-                   dataType: 'json',
-                   data: {
-                       email: email.val(),
-                       subject: subject.val(),
-                       message: message.val()
-                   }, 
-                   success: function (response) 
-                   {
-                        $('#myForm')[0].reset();
-                        $('.sent-notification').css('display', 'block');
-                        $('.sent-notification').text("Message Sent Successfully.");
-                        $('.sent-notification').css('background-color', '#E7FAF0');
-                        $('.sent-notification').css('color', '#5CDD96');
-                   },
-                   error: function (response) 
-                   {
-                        $('#myForm')[0].reset();
-                        $('.sent-notification').css('display', 'block');
-                        $('.sent-notification').text("Failed to send mail.");
-                        $('.sent-notification').css('background-color', '#FFEEEE');
-                        $('.sent-notification').css('color', '#CE4A48');
-                   }
-
-
-
-                });
-            }
-        }
-
-        function isNotEmpty(caller) 
-        {
-            if (caller.val() == "") 
-            {
-                $('.sent-notification').css('display', 'block');
-                $('.sent-notification').text("Fill up all the required fields.");
-                $('.sent-notification').css('background-color', '#FFEEEE');
-                $('.sent-notification').css('color', '#CE4A48');
-                return false;
-            } 
-            else
-
-               
-                
-
-            return true;
-        }
-    </script>
-    
 
 
        

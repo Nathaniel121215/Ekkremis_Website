@@ -57,7 +57,7 @@
   {
     --sub-font-size:1.25rem;
     --big-font-size:1.40rem;
-    --bigger-font-size:1.75rem;
+    --bigger-font-size:1.80rem;
     --biggest-font-size:3rem;
     --normal-font-size:1rem;
     --smaller-font-size:.875rem;
@@ -530,18 +530,20 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 30px;
   padding-top: 1.5rem;
+  
 
 }
 
 .box
 {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: .3s;
-  padding-bottom: 1.5rem;
+  
 
 }
 

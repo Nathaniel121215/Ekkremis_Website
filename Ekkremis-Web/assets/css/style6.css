@@ -121,7 +121,7 @@ img {
 
 .section
 {
-  padding: 2.5rem 0 2rem;
+  padding: 5rem 0 2rem;
 }
 
 .section-title
@@ -131,6 +131,7 @@ img {
   margin-bottom: var(--mb-4);
   letter-spacing: .1rem;
 
+
 }
 
 
@@ -139,8 +140,8 @@ img {
 
   content: '';
   position: absolute;
-  width: 100px;
-  height: .18rem;
+  width: 80px;
+  height: .20rem;
   top:-1rem;
   background-color: var(--dark-color);
  
@@ -189,7 +190,7 @@ img {
 
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 849px)
 {
   .nav__menu
   {
@@ -203,7 +204,6 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
-  
 
 }
   .nav__item
@@ -221,7 +221,7 @@ img {
   .nav__logo2
   {
     max-width: 100px;
-  
+
   }
 
   .nav__toggle
@@ -239,11 +239,6 @@ img {
   .nav__link:hover
   {
     color:rgb(61, 104, 149);
-    
-  }
-  #fix
-  {
-    order: 1;
     
   }
 
@@ -294,128 +289,133 @@ img {
   transform: translateY(-.25rem);
 }
 
-/*===== Recruitment =====*/
-
-
-.homepage
+/*===== SERVICES =====*/
+.servicesmain__container
 {
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 30px;
+  margin-bottom: 2rem;
 }
-.homepage__background
-{
-  min-height: 25rem;
-  background-color: #3D6895;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.homepage__data
+#services__title
 { 
-  max-width: 400px;
+  margin-top: 2rem;
 }
-
-.main__container
-{
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#services__title2
+{ 
+  margin-top: 2rem;
 }
-.homepage___title
+.servicesmain__title
 {
-  color: var(--white-color);
-  margin-bottom: .4rem;
-  font-size: var(--bigger-font-size);
+  font-size: var(--sub-font-size);
   font-weight: var(--font-semi-bold);
+  padding-bottom: 10px;
 }
-
-.homepage___description
+.services__details
 {
-  color: var(--white-color);
-  margin-bottom: .8rem;
-  font-size: var(--normal-font-size);
+
+  text-align: justify;
+  text-justify: inter-word;
   font-weight: var(--font-medium);
-}
-
-/*===== Recruitment =====*/
-.first__preview
-{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #F7F8F9;
-}
-.first__preview__container
-{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  
-}
-
-.first__img
-{
-  border: .01px solid rgb(211, 211, 211);
-  border-radius: .8rem;
-  width: 75rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  
-}
-
-/*===== Recruitment =====*/
-.second__box1
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.second
-{
-  border-top: .8px solid #cccccc;
- 
-}
-#second2
-{
-  background-color: #F7F8F9;
-}
-.second__container
-{
-  position: relative;
-  gap: 1rem;
-  
-}
-
-.sub__img
-{
-  border: .01px solid rgb(211, 211, 211);
-  border-radius: .5rem;
-  margin-bottom: .8rem;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
- 
-}
-
-.header__title
-{
-  font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
-  padding-bottom: 1rem;
-}
-.sub__details
-{
   font-size: var(--normal-font-size);
-  font-weight: var(--font-semi-bold);
-  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  
 }
-.description__details
+.services__details2
+{
+
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  margin-bottom: 2rem;
+  
+}
+
+.servicesmain__box
+{
+  border: 1px solid #cacaca;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.3rem;
+}
+
+.servicesmain__description
 {
   text-align: justify;
   text-justify: inter-word;
-  font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  padding-bottom: 1rem;
+  font-size: var(--smaller-font-size);
+  padding-bottom: 13px;
+
 }
+
+.button__services
+{
+  background-color: #6AB1E1;
+  display: inline-block;
+  padding: .6rem 2.1rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.button__services:hover{
+  transform: translateY(-.25rem);
+}
+
+/*===== SERVICES SUB =====*/
+
+.servicessub__container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+} 
+
+.servicessub__box
+{
+  
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  transition: .3s;
+  height: 100%;
+  border: 1px solid #cacaca;
+  
+}
+
+.servicessub__box:hover
+{
+  transform: scale(1.06);
+  transition: .5s;
+  padding: 2rem;
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .4rem;
+  background-color: #6AB1E1;
+  color: white;
+}
+
+.servicessub__title
+{
+  font-size: var(--sub-font-size);
+  font-weight: var(--font-semi-bold);
+  padding-bottom: 10px;
+
+}
+
+.servicessub__description
+{
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: var(--font-medium);
+  font-size: var(--smaller-font-size);
+
+
+}
+
 
 /* ===== FOOTER =====*/
 
@@ -429,7 +429,6 @@ img {
 .footer__container
 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
- 
   
   
 }
@@ -484,6 +483,7 @@ main
 {
   overflow: hidden;
 }
+
 #icon-hover
 {
   transition: .3s;
@@ -536,12 +536,13 @@ main
 }
 
 
+
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 801px)
+@media screen and (min-width: 850px)
 {
   .home
   {
-
+    border: red 1px solid;
   }
   .bd-grid
   {
@@ -556,12 +557,12 @@ main
 
   .section
   {
-    padding: 3rem 0 3rem;
+    padding: 6rem 0 3rem;
   }
 
   .section-title::after
   {
-    width: 150px;
+    width: 110px;
   }
   .nav
   {
@@ -584,74 +585,11 @@ main
   {
     display: none;
   }
-
-  .homepage__background
+  .nav__logo2
   {
-    min-height: 45rem;
-  }
-  #recruitment_bd
-  {
-    background: url('recruitment.jpg') no-repeat center/cover;
+    max-width: 135px;
 
   }
-  #employees_bd
-  {
-    background: url('employee.jpg') no-repeat center/cover;
-  }
-
-  #attendances_bd
-  {
-    background: url('attendance.jpg') no-repeat center/cover;
-  }
-
-  #leaves_bd
-  {
-    background: url('leaves.jpg') no-repeat center/cover;
-  }
-
-  #timesheets_bd
-  {
-    background: url('timesheet.jpg') no-repeat center/cover;
-  }
-
-  #payroll_bd
-  {
-    background: url('payroll.jpg') no-repeat center/cover;
-  }
-  
-  
-  .main__container
-  {
-    margin-top: 0rem;
-    display: block;
-    
-
-  }
-
-  .second__container
-  {
-    grid-template-columns: repeat(2, 1fr);
-    
-  }
-
-  .second__container
-  {
-    gap: 4rem;
-  }
-
-  #fix
-  {
-    order: 0;
-  }
-
-
-
-
-  
-}
-
-@media screen and (min-width: 750px)
-{
 
 
 }
@@ -665,18 +603,8 @@ main
   .footer__container
     {
       gap: 80px;
-      
-      
+       
     } 
-  .second__container
-    {
-      gap: 8rem;
-    }
 
   
 }
-
-
-
-
-
