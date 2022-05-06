@@ -321,8 +321,6 @@ img {
   text-justify: inter-word;
   font-weight: var(--font-medium);
   font-size: var(--smaller-font-size);
-  padding-bottom: 3rem;
-  
   
 }
 
@@ -376,6 +374,25 @@ img {
 {
   transform: translateY(-.9rem);
 }
+
+
+/* ===== MEET THE TEAM HOVER =====*/
+#teamdmain
+{
+  margin-bottom: 3rem;
+}
+.magnify:hover
+{
+  transform: scale(1.06);
+  transition: .5s;
+  padding: 1rem;
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .4rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 6px 6px;
+
+}
+
+
 
 /* ===== WHY CHOOSE US =====*/
 .whychooseus
@@ -780,4 +797,22 @@ main
 
 
   
+}
+
+
+@media screen and (max-width: 400px)
+{
+.teamoneimg
+{
+  justify-content: center;
+  align-items: center;
+}
+.team__imgs
+{
+  max-height: 280px;
+}
+#landscapefix
+{
+  max-height: 190px;
+}
 }

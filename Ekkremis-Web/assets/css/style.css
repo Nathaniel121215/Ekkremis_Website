@@ -827,6 +827,28 @@ main
 }
 
 
+@media screen and (max-width: 400px)
+{
+.aboutus__img
+{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.aboutus__imgs
+{
+
+  max-height: 240px;
+
+
+}
+
+
+}
+
+
+
 
 
 
