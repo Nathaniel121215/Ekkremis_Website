@@ -121,7 +121,7 @@ img {
 
 .section
 {
-  padding: 5rem 0 2rem;
+  padding: 5rem 0 0rem;
 }
 
 .section-title
@@ -190,7 +190,7 @@ img {
 
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 849px)
 {
   .nav__menu
   {
@@ -204,6 +204,7 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
+
 
 }
   .nav__item
@@ -328,7 +329,7 @@ img {
 {
   display: flex;
   gap:15px;
-
+  
 
 }
 
@@ -338,6 +339,7 @@ img {
   min-width: 100px;
   object-fit: cover;
   transition: .5s;
+  
 
 }
 
@@ -359,7 +361,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 30px;
   margin-top: 2rem;
-
+  
 }
 
 .teamoneimg2
@@ -638,7 +640,7 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 801px)
+@media screen and (min-width: 850px)
 {
 
   .bd-grid
@@ -687,6 +689,12 @@ main
   {
     display: none;
   }
+  
+  .nav__logo2
+  {
+    max-width: 135px;
+
+  }
 
 
 }
@@ -709,10 +717,9 @@ main
     padding-bottom: .5rem;
   }
 
-  .teamdetails
+  #teamdmain
   {
-    padding-bottom: 1.5rem;
-    
+    margin-bottom: 1.3rem;
   }
 
 
