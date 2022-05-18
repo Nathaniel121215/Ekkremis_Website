@@ -128,6 +128,7 @@ img {
 {
   position: relative;
   font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
   margin-bottom: var(--mb-4);
   letter-spacing: .1rem;
 
@@ -508,6 +509,7 @@ img {
 {
   position: relative;
   font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
   letter-spacing: .1rem;
   text-align: center;
   padding-bottom: 3rem;
@@ -571,6 +573,7 @@ img {
 {
   position: relative;
   font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
   letter-spacing: .1rem;
   text-align: center;
   padding-bottom: 3rem;

@@ -180,7 +180,7 @@ img {
 
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 849px)
 {
   .nav__menu
   {
@@ -313,13 +313,17 @@ img {
 
 
 /*===== CONTACT US =====*/
+.contactus
+{
+  min-height:45rem;
 
+}
 .contactus__container
 {
     margin-top: 3rem;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-
+    gap: 3rem;
+    
 }
 
 .contact__data
@@ -418,20 +422,29 @@ img {
   }
 
 
-.mapsec
+#map-sec
 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: .1px solid rgba(99, 99, 99, 0.308);
 }
 #map 
 {
-    height: 550px;
+    max-height: 450px;
     width: 100%;
 }
+.magnify
+{
+  max-width: fit-content;
+}
 
+.magnify:hover
+{
+  transform: scale(1.06);
+  transition: .5s;
+  padding: 1rem;
+  border: .01px solid rgb(211, 211, 211);
+  border-radius: .4rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 6px 6px;
+}
 
 /* ===== FOOTER =====*/
 
@@ -562,7 +575,7 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 801px)
+@media screen and (min-width: 850px)
 {
 
   .bd-grid
@@ -611,24 +624,41 @@ main
   {
     display: none;
   }
+  .nav__logo2
+  {
+    max-width: 135px;
+
+  }
+  .contactus__container
+  {
+    gap: 0rem;
+      
+  } 
+
 
 
 }
 
+@media screen and (max-width: 900px)
+{
+.contactus__container
+{
+    margin-top: 1rem;
+    
+} 
 
-@media screen and (max-width: 600px)
+}
+
+
+@media screen and (max-width: 800px)
 {
 .contactus__container
 {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 1rem;
     
 } 
-#map 
-{
-    height: 450px;
 
-}
+
 }
 
 

@@ -204,6 +204,7 @@ img {
     transition: .5s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
   }
+  
 
 }
   .nav__item
@@ -604,6 +605,34 @@ main
     {
       gap: 80px;
        
+    } 
+
+
+  
+}
+
+@media screen and (max-width: 800px)
+{
+
+  .servicessub__container
+    {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 30px;
+    } 
+
+  
+}
+
+
+@media screen and (min-width: 801px)
+{
+
+  .servicessub__container
+    {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+      gap: 30px;
     } 
 
   

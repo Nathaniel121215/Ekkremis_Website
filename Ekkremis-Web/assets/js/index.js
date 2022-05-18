@@ -1,4 +1,6 @@
 
+
+
 const sr = ScrollReveal({     distance: '60px',     duration: 3500,     delay: 100})
 
 /*===== INDEX =====*/ 

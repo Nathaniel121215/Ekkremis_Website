@@ -1,19 +1,20 @@
 
+
 const sr = ScrollReveal({     distance: '60px',     duration: 3500,     delay: 100})
 
 /*===== SERVICE/SYSTEM =====*/ 
 
 sr.reveal(`#services__title`,{origin: 'left',delay: 200})
 sr.reveal(`.services__details`,{origin: 'left',delay: 400 })
-sr.reveal(`#main__box1`,{origin: 'bottom', delay: 600 })
-sr.reveal(`#main__box2`,{origin: 'bottom',delay: 800 })
+
+sr.reveal(`.servicesmain__box`,{origin: 'bottom', delay: 600, interval:450})
+
+
 
 sr.reveal(`#services__title2`,{origin: 'left',delay: 1000})
 sr.reveal(`.services__details2`,{origin: 'left',delay: 1200 })
 
 sr.reveal(`.servicessub__boxs`,{origin: 'bottom',delay: 1400, interval:450 })
-
-
 
 
 /*===== MEET THE TEAM =====*/ 
@@ -40,10 +41,8 @@ sr.reveal(`.questions__group`,{origin: 'left',delay: 400})
 
 /*===== CONTACT US =====*/ 
 sr.reveal(`.contactus__title`,{origin: 'left',delay: 200})
-sr.reveal(`.contact__data`,{origin: 'left',delay: 400})
-sr.reveal(`.contact__form`,{origin: 'left',delay: 600})
-
-sr.reveal(`.mapsec`,{origin: 'bottom',delay: 1000})
+sr.reveal(`.contactus__information`,{origin: 'left', delay: 400, interval:450})
+sr.reveal(`#map-sec`,{origin: 'bottom',delay: 600})
 
 
 
@@ -51,27 +50,7 @@ sr.reveal(`.mapsec`,{origin: 'bottom',delay: 1000})
 sr.reveal(`.HIRS__title`,{origin: 'left',delay: 200})
 sr.reveal(`.HIRS__details`,{origin: 'left',delay: 400})
 sr.reveal(`.mainbox2`,{origin: 'left',delay: 600})
-
 sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 800})
-
-
-/*===== HRIS FEATURE =====*/ 
-
-sr.reveal(`.homepage__data`,{origin: 'left',delay: 200})
-sr.reveal(`.first__img`,{origin: 'bottom',delay: 500})
-
-sr.reveal(`.second__box1`,{origin: 'bottom',delay: 200})
-sr.reveal(`.second__box2`,{origin: 'bottom',delay: 400})
-
-/*===== HIMS FEATURE =====*/ 
-
-sr.reveal(`#show1`,{origin: 'left',delay: 200})
-sr.reveal(`#show2`,{origin: 'left',delay: 400})
-sr.reveal(`#show3`,{origin: 'left',delay: 600})
-sr.reveal(`#show4`,{origin: 'left',delay: 800})
-sr.reveal(`#show5`,{origin: 'bottom',delay: 1000})
-
-
 
 
 
@@ -148,6 +127,7 @@ function scrollUp(){
     if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
 
 
 
