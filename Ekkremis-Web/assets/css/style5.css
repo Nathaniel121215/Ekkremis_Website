@@ -189,7 +189,7 @@ img {
 
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 849px)
 {
   .nav__menu
   {
@@ -486,7 +486,7 @@ main
 {
   position: fixed;
   background-color: #3D6895;
-  right: 1.5rem;
+  left: 1.5rem;
   bottom: -30%;
   display: inline-flex;
   opacity: .8;
@@ -518,7 +518,7 @@ main
 
 /* Show Scroll Up*/
 .show-scroll{
-  bottom: 3rem;
+  bottom: 1.8rem;
 }
 
 
@@ -535,7 +535,7 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 801px)
+@media screen and (min-width: 850px)
 {
   .home
   {
@@ -581,6 +581,11 @@ main
   .nav__toggle
   {
     display: none;
+  }
+  .nav__logo2
+  {
+    max-width: 135px;
+  
   }
 
   

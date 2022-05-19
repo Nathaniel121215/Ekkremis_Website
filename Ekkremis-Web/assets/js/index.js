@@ -17,20 +17,12 @@ sr.reveal(`#img4`,{origin: 'bottom', interval: 2200, delay: 600})
 
 
 sr.reveal(`.Core__title`,{origin: 'left', interval: 2200})
-sr.reveal(`#value1`,{origin: 'bottom', interval: 2200, delay: 200})
-sr.reveal(`#value2`,{origin: 'bottom', interval: 2200, delay: 400})
-sr.reveal(`#value3`,{origin: 'bottom', interval: 2200, delay: 600})
-sr.reveal(`#value4`,{origin: 'bottom', interval: 2200, delay: 800})
+sr.reveal(`#value`,{origin: 'bottom',delay: 200, interval:450 })
+
 
 sr.reveal(`.Client__title`,{origin: 'left', interval: 2200});
-sr.reveal(`#client1`,{origin: 'bottom', interval: 2200, delay: 200})
-sr.reveal(`#client2`,{origin: 'bottom', interval: 2200, delay: 400})
-sr.reveal(`#client3`,{origin: 'bottom', interval: 2200, delay: 600})
-sr.reveal(`#client4`,{origin: 'bottom', interval: 2200, delay: 800})
-sr.reveal(`#client5`,{origin: 'bottom', interval: 2200, delay: 1000})
-sr.reveal(`#client6`,{origin: 'bottom', interval: 2200, delay: 1200})
-sr.reveal(`#client7`,{origin: 'bottom', interval: 2200, delay: 1400})
-sr.reveal(`#client8`,{origin: 'bottom', interval: 2200, delay: 1600})
+sr.reveal(`#clients`,{origin: 'bottom',delay: 200, interval:450 })
+
 
 
 /*===== MENU SHOW =====*/ 

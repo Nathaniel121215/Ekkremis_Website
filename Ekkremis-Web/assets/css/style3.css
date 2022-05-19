@@ -599,7 +599,7 @@ main
 {
   position: fixed;
   background-color: #3D6895;
-  right: 1.5rem;
+  left: 1.5rem;
   bottom: -30%;
   display: inline-flex;
   opacity: .8;
@@ -620,7 +620,7 @@ main
 
 /* Show Scroll Up*/
 .show-scroll{
-  bottom: 3rem;
+  bottom: 1.8rem;
 }
 
 
