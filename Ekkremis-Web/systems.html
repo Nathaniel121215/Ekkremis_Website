@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        
+
+        
+        <link rel="stylesheet" href="assets/css/style6.css">
+
+        <!--=============== Small Icon ===============-->
+
+        <link rel="shortcut icon" href="assets/images/illustration folder/company logos/Elogo.png" type="image/x-icon">
+
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel="stylesheet">
+        
+
+        <title>Ekkremis</title>
+    </head>
+    <body>
+
+
+
+        <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100379671339742");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">EKKREMIS INC.</a>
+                <div class="nav__logo2" id="nav-nav__logo2">
+                    <a href="#"><img src="assets/images/illustration folder/company logos/EkkremisLogo.png" alt="" class="home__img__logo"></a>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bxs-grid'></i>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link active">Systems</a></li>
+                        <li class="nav__item"><a href="meettheteam.html" class="nav__link">Meet the Team</a></li>
+                        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        </header>
+        
+
+        <main class="l-main">
+
+            <section class="services section" id="services">
+                <h2 class="section-title bd-grid" id="services__title">OUR SYSTEMS</h2>
+                 <div class="services__container bd-grid">
+                     
+
+                     <div class="servicesmain__container">
+                         <div class="servicesmain__box" id="main__box1">
+                            <div class="servicesmain__title">Human Resource Information System</div>
+                            <div class="servicesmain__description">Step up your game by using our HRIS Solution to automate your business processes and to make your business execute HR-related functions more easily and efficiently.</div>
+                            <div class="servicesmain__button">
+                                <a href="HIRS.html" class="button__services">Learn More</a>
+                            </div>
+                         </div>
+
+                         <div class="servicesmain__box" id="main__box2">
+                            <div class="servicesmain__title">Hospital Information Management System</div>
+                            <div class="servicesmain__description">HIMS is our Hospital Information Management System that has comprehensive modules that support the vital healthcare services, management and admin functions.</div>
+                            <div class="servicesmain__button">
+                                <a href="HIMS.html" class="button__services">Learn More</a>
+                            </div>
+                         </div>
+
+                     </div>
+
+                </div>
+                
+                <h2 class="section-title bd-grid" id="services__title2">OTHER SYSTEMS</h2>
+
+                <div class="services__container bd-grid">
+
+                    <div class="services__details2">
+                        <p>These are other systems that we offer as a single package that can help your company solve a specific problem and will improve the technology aspect of your business.</p>
+                    </div>
+                     
+                     <div class="servicessub__container">
+
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">PROJECT MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">Project management system will provide visibility on project activities, timelines, and deliverables to enable effective and efficient monitoring and management.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">INVENTORY SYSTEM</div>
+                                 <div class="servicessub__description">Inventory System will provide visibility of all product movements and transactions, and allow you to manage and track inventory levels, materials, supplies, or final products you have on your warehouse shelf, in store, or sitting with other retailers and distributors, orders, sales, and deliveries.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">CLINIC MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">Clinic Management System will help streamline your clinic workflow and operations. Doctors can check their schedule and patients can book appointments, manage prescriptions, etc. This is a lighter version of Hospital Management System with more focus on the clinic’s specialization.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">SCHOOL MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">School Management System is an ideal way to manage complete school operation. This is for an efficient management of students, facilities, courses and classes while keeping a collaborative platform.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">ACCOUNTING SYSTEM</div>
+                                 <div class="servicessub__description">Accounting System will help you manage your business’ records to track expenses, manage cashflows, invoices, and organize financial information that can be used to monitor, analyze, and improve operations.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">CRM System will help in organizing and analyzing customer information data to better manage relationships with customers. This will allow you to track information across every touchpoint in a customer’s journey that can help you cater to their needs, build better relationships, and market smarter.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">MARKETING AUTOMATION</div>
+                                 <div class="servicessub__description">Marketing Automation is a great help to save the time of your marketing team to carry out marketing-related operations, this will allow you to create multiple campaigns and set time. This will help your business to manage all campaign activities from a single platform, and easily track the flow of the campaign message and review success rate.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">POINT OF SALE SYSTEM</div>
+                                 <div class="servicessub__description">POS System is centralized on sales transactions, payment processing, and customer relationship management. This system can be integrated with other system and get real-time control and accurate forecasts.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">EVENT MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">Event Management System will help you manage on-site and online events. It is an all-in-one event management platform that is capable of handling events of any type or scale. This will cover all aspects of an Event Planner’s job from event organization and ticket sales to visibility and promotion.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">ONLINE SURVEY</div>
+                                 <div class="servicessub__description">Online Survey will be able to help you manage appraisals, satisfaction surveys, marketing campaigns, feedback forms, etc. You will be able to design and test your survey, share and collect data, analyze answers, live sessions, and immediately benefit from the results.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">REAL PROPERTY TAX ASSESSMENT SYSTEM</div>
+                                 <div class="servicessub__description">Real Property Tax Assessment System will automate the assessment of taxes due on real estate properties. This will provide a comprehensive approach in maintaining large volume of property records and offers fast and accurate assessment service on all real property taxpayers for tax payment purposes.
+                                 </div>
+                            </div>             
+                         </div>
+                         <div class="servicessub__boxs">
+                            <div class="servicessub__box">
+                                 <div class="servicessub__title">DOCUMENT MANAGEMENT SYSTEM</div>
+                                 <div class="servicessub__description">Document Management System is a centralized system that will help you in creating new documents, storing important files, managing recorded data, retrieval of documents, and their protection. You can store data in the forms of photos, videos, URLs, and PDF formats.
+                                 </div>
+                            </div>             
+                         </div>
+
+                        
+                     </div>
+                </div>      
+              </section>
+       
+
+              <footer class="footer">    
+                <div class="footer__container bd-grid">
+
+                    <div class="footer__box">
+                        <h3 class="footer__title">EKKREMIS SOLUTIONS INC.</h3>
+                        <p class="footer__description">Unit 706, 7th Floor,Greenbelt<br> 
+                            Mansion, #106 Perea Street <br>
+                            Legaspi Village, Makati City, Philippines 1226</p>
+                    </div>
+    
+                    <div class="footer__box">
+                        <h3 class="footer__title">EXPLORE</h3>
+                        <ul>
+                            <li><a href="index.html" class="footer__link">Home</a></li>
+                            <li><a href="index.html" class="footer__link">About Us</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="#" class="footer__link">Systems</a></li>
+                            <li><a href="meettheteam.html" class="footer__link">Meet the Team</a></li>
+                            <li><a href="contactus.html" class="footer__link">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer__box">
+                        <h3 class="footer__title">SUPPORT</h3>
+                        <ul>
+                            <p class="footer__link">info@ekkremis.com</p>  
+                            <p class="footer__link">(02) 8280-0312</p>  
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer__box">
+                        <a href="https://www.facebook.com/ekkremissolutions" class="footer__social"><i class="bx bxl-facebook-square" id="icon-hover"></i></a>
+                        <a href="https://www.instagram.com/ekkremisolutionsinc/" class="footer__social"><i class="bx bxl-instagram-alt" id="icon-hover"></i></a>
+                        <a href="https://www.linkedin.com/company/ekkremis-solutions-incorporated" class="footer__social"><i class="bx bxl-linkedin-square" id="icon-hover"></i></a>
+                        <br>
+                        <script language="JavaScript" src="https://dunsregistered.dnb.com" type="text/javascript"></script> 
+                    </div>
+
+    
+                </div>
+
+                <p class="footer__copy">MAKE EXCELLENCE A HABIT<br>
+                    ©COPYRIGHT 2022.ALL RIGHTS RESERVED.</p>
+
+              </footer>
+
+              <a href="#" class="scrollup" id="scroll-up"> 
+                <i class="ri-arrow-up-fill scrollup__icon"></i>
+              </a>
+
+
+
+        </main>
+
+
+      
+        
+
+        <!--===== MAIN JS =====-->
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+
+        
+    </body>
+</html>

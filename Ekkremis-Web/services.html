@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        
+
+        
+        <link rel="stylesheet" href="assets/css/style2.css">
+
+        <!--=============== Small Icon ===============-->
+
+        <link rel="shortcut icon" href="assets/images/illustration folder/company logos/Elogo.png" type="image/x-icon">
+
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel="stylesheet">
+        
+
+        <title>Ekkremis</title>
+    </head>
+    <body>
+
+
+
+        <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100379671339742");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">EKKREMIS INC.</a>
+                <div class="nav__logo2" id="nav-nav__logo2">
+                    <a href="#"><img src="assets/images/illustration folder/company logos/EkkremisLogo.png" alt="" class="home__img__logo"></a>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bxs-grid'></i>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link active">Services</a></li>
+                        <li class="nav__item"><a href="systems.html" class="nav__link">Systems</a></li>
+                        <li class="nav__item"><a href="meettheteam.html" class="nav__link">Meet the Team</a></li>
+                        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        </header>
+        
+
+        <main class="l-main">
+
+            <section class="services section" id="services">
+                <h2 class="section-title bd-grid" id="services__title">OUR SERVICES</h2>
+                 <div class="services__container bd-grid">
+                     <div class="services__details">
+                         <p>From business and systems analysis, project management, pre implementation, implementation, post implementation to after sales, Ekkremis Solutions Inc. (ESI) offers a complete range of solutions and services essential in solving your integration challenges. ESI will also assist you in implementing the chosen services or solutions as flawlessly as possible.</p>
+                     </div>
+
+                     <div class="servicessub__container">
+                        
+                         <div class="servicessub__boxs" id="servicessub__boxs1" onclick="">
+                            <div class="servicessub__box">
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon1"></div>
+                                 </div>
+                                 <div class="servicessub__title">Business Analysis and Process Developments</div>
+                                 <div class="servicessub__description">
+                                     We analyze the nature of business, defining process gaps and areas where automated solutions can be implemented to enable significant process and cost efficiencies as well as improved service delivery.
+                                 </div>
+                            </div>             
+                         </div>
+
+                         <div class="servicessub__boxs" id="servicessub__boxs2">
+                            <div class="servicessub__box">
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon2"></div>
+                                </div>
+                                <div class="servicessub__title">It Solutions</div>
+                                <div class="servicessub__description">
+                                    We offer packaged IT System Solutions that would effectively address and automate processes to significantly improve service delivery.
+                                </div>
+                            </div>     
+                         </div>
+
+                         <div class="servicessub__boxs" id="servicessub__boxs3">
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon3"></div>
+                                </div>
+                                <div class="servicessub__title">Managed Service</div>
+                                <div class="servicessub__description">
+                                    We have a team of professionals and highly skilled IT personnel that can handle end-to-end management and maintenance of your IT systems and processes such that you need not to put up your own IT team. 
+                                </div>
+                                
+                            </div>
+                         </div>
+
+                         <div class="servicessub__boxs" id="servicessub__boxs4">
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon4"></div>
+                                </div>
+                                <div class="servicessub__title">Project Management</div>
+                                <div class="servicessub__description">We analyze the nature of business, defining process gaps and areas where automated solutions can be implemented to enable significant process and cost efficiencies as well as improved service delivery.</div>
+                                
+                            </div>  
+                        </div>
+
+                        <div class="servicessub__boxs" id="servicessub__boxs5">
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon5"></div>
+                                   
+                                </div>
+                                <div class="servicessub__title">Quality Assurance and Testing</div>
+                                <div class="servicessub__description">We test services to ensure optimum performance of system(s) and all its functionalities that will enable effective usability of business users.</div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="servicessub__boxs" id="servicessub__boxs6">
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon6"></div>
+                                </div>
+                                <div class="servicessub__title">Service Desk Support</div>
+                                <div class="servicessub__description">We provide service desk support to cover Level 1 system or process issues for all internal business users. This includes definition of levels 1, 2 and 3 escalation and resolution processes.</div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="servicessub__boxs" id="servicessub__boxs7"> 
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon7"></div>
+                                </div>
+                                <div class="servicessub__title">System Implementation and Integration</div>
+                                <div class="servicessub__description">We will handle implementation of any system solution which the business acquires to include ensuring seamless integration to existing systems.</div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="servicessub__boxs" id="servicessub__boxs8">
+                            <div class="servicessub__box">
+
+                                <div class="servicesub__icon">
+                                    <div alt="" class="servicesub__icons" id="icon8"></div>
+                                </div>
+                                <div class="servicessub__title">Trading</div>
+                                <div class="servicessub__description">Ekkremis Solutions, Incorporated also offers various computer hardwares, devices and peripherals supportive of your business needs.</div>
+                                
+                            </div>
+                        </div>
+                     </div>
+                </div>      
+              </section>
+       
+
+              <footer class="footer">    
+                <div class="footer__container bd-grid">
+
+                    <div class="footer__box">
+                        <h3 class="footer__title">EKKREMIS SOLUTIONS INC.</h3>
+                        <p class="footer__description">Unit 706, 7th Floor,Greenbelt<br> 
+                            Mansion, #106 Perea Street <br>
+                            Legaspi Village, Makati City, Philippines 1226</p>
+                    </div>
+    
+                    <div class="footer__box">
+                        <h3 class="footer__title">EXPLORE</h3>
+                        <ul>
+                            <li><a href="index.html" class="footer__link">Home</a></li>
+                            <li><a href="index.html" class="footer__link">About Us</a></li>
+                            <li><a href="#" class="footer__link">Services</a></li>
+                            <li><a href="systems.html" class="footer__link">Systems</a></li>
+                            <li><a href="meettheteam.html" class="footer__link">Meet the Team</a></li>
+                            <li><a href="contactus.html" class="footer__link">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer__box">
+                        <h3 class="footer__title">SUPPORT</h3>
+                        <ul>
+                            <p class="footer__link">info@ekkremis.com</p>  
+                            <p class="footer__link">(02) 8280-0312</p>  
+                        </ul>
+                    </div>
+    
+    
+                    <div class="footer__box">
+                        <a href="https://www.facebook.com/ekkremissolutions" class="footer__social"><i class="bx bxl-facebook-square" id="icon-hover"></i></a>
+                        <a href="https://www.instagram.com/ekkremisolutionsinc/" class="footer__social"><i class="bx bxl-instagram-alt" id="icon-hover"></i></a>
+                        <a href="https://www.linkedin.com/company/ekkremis-solutions-incorporated" class="footer__social"><i class="bx bxl-linkedin-square" id="icon-hover"></i></a>
+                        <br>
+                        <script language="JavaScript" src="https://dunsregistered.dnb.com" type="text/javascript"></script> 
+                    </div>
+
+    
+                </div>
+
+                <p class="footer__copy">MAKE EXCELLENCE A HABIT<br>
+                    ©COPYRIGHT 2022.ALL RIGHTS RESERVED.</p>
+
+              </footer>
+
+              <a href="#" class="scrollup" id="scroll-up"> 
+                <i class="ri-arrow-up-fill scrollup__icon"></i>
+              </a>
+
+
+
+        </main>
+
+
+      
+        
+
+        <!--===== MAIN JS =====-->
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/main.js"></script>
+
+        
+    </body>
+</html>

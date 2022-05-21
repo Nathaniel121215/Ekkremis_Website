@@ -5,340 +5,379 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        
 
-        <!-- ===== BOX ICONS ===== -->
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--=============== Small Icon ===============-->
+
+        <link rel="shortcut icon" href="assets/images/illustration folder/company logos/Elogo.png" type="image/x-icon">
+
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel="stylesheet">
         
 
-        <title>Responsive Ecommerce Website Sneakers</title>
+        <title>Ekkremis</title>
     </head>
     <body>
+
+            <!-- Messenger Chat Plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "100379671339742");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v13.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+
 
         <!--===== HEADER =====-->
         <header class="l-header" id="header">
             <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">EKKREMIS INC.</a>
+                <div class="nav__logo2" id="nav-nav__logo2">
+                    <a href="#"><img src="assets/images/illustration folder/company logos/EkkremisLogo.png" alt="" class="home__img__logo"></a>
+                    
+                </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bxs-grid'></i>
                 </div>
-                <a href="#" class="nav__logo">Nath</a>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
-                        <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
-                        <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
-
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#aboutus" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="systems.html" class="nav__link">Systems</a></li>
+                        <li class="nav__item"><a href="meettheteam.html" class="nav__link">Meet the Team</a></li>
+                        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact Us</a></li>
                     </ul>
                 </div>
-
-                <div class="nav__shop">
-                    <i class="bx bx-shopping-bag"></i>
-                </div>
-            </nav>
+            </nav>   
         </header>
         
 
         <main class="l-main">
+
             <!--===== HOME =====-->
+
             <section class="home" id="home">
-
-                <div class="home__container bd-grid">
-
-                    <div class="home__sneaker">
-                        <div class="home__shape">
-
+                
+              <div class="home__container">
+                  
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" id="firstimg" style ="background: linear-gradient(rgba(2, 40, 91, .5),  rgba(2, 40, 91, .5)), url('assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 1.jpg') no-repeat center/cover;">
+                            
+                            
+                            <div class="dot__box2">
+                                <span class="dot2 active2"></span> 
+                                <span class="dot2"></span> 
+                                <span class="dot2"></span> 
+                            </div>   
                         </div>
-                        <img src="assets/img/imghome.png" alt="" class="home__img">
-                    </div>
+                        <div class="mySlides fade" id="secondimg" style ="background: linear-gradient(rgba(2, 40, 91, .5),  rgba(2, 40, 91, .5)), url('assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 2.jpg') no-repeat center/cover;">
+                            
+                            <div class="dot__box2">
+                                <span class="dot2"></span> 
+                                <span class="dot2 active2"></span> 
+                                <span class="dot2"></span> 
+                            </div>   
+                        </div>
+                        <div class="mySlides fade" id="thirdimg" style ="background: linear-gradient(rgba(2, 40, 91, .5),  rgba(2, 40, 91, .5)), url('assets/images/HRIS-IMAGES/WEB-IMAGES/landing\ 3.jpg') no-repeat center/cover;">
+                           
+
+                            <div class="dot__box2">
+                                <span class="dot2"></span> 
+                                <span class="dot2"></span> 
+                                <span class="dot2 active2"></span> 
+                            </div>   
+                            
+                            
+                        </div>
+                        
+
+                        
+                    </div>    
+                    
+                    
+                    <div class="dot__box">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>   
 
                     <div class="home__data">
-                        <span class="home__new">New in</span>
-                        <h1 class="home__title">YEEZY BOOST <br> SPLY - 350</h1>
-                        <p class="home__description">Explore the new collection of sneakers</p> 
-                        <a href="#" class="button">Explore now</a> 
-                    </div>
-
-
-                </div>
-
-            </section>
-            
-
-            <!--===== FEATURED =====-->
-
-            <section class="featured section" id="featured">
-
-                <h2 class="section-title">FEATURED</h2>
-
-                <div class="featured__container bd-grid">
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured1.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured2.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured3.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-                    
-                 
-
-
-                </div>
-
-            </section>
-            
-
-            <!--===== COLLECTION =====-->
-
-            <section class="collection section">
-
-                <div class="collection__container bd-grid">
-
-                    <div class="collection__card">
-                        <div class="collection__data">
-                            <h3 class="collection__name">Nike</h3>
-                            <p class="collection__description">New collection 2020</p>
-                            <a href="#" class="button-light">Buy now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-    
-                        </div>
-                        
-                        <img src="assets/img/collection1.png" alt="" class="collection__img">
+                        <p class="home__title">MAKE EXCELLENCE A HABIT.</p>
+                        <a href="#aboutus" class="button" id="homebtn">Explore us</a>
                     </div>
                     
-                    <div class="collection__card">
-                        <div class="collection__data">
-                            <h3 class="collection__name">Nike</h3>
-                            <p class="collection__description">New collection 2020</p>
-                            <a href="#" class="button-light">Buy now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-    
-                        </div>
-                        
-                        <img src="assets/img/collection2.png" alt="" class="collection__img">
-                    </div>
-                  
-
-
-
-
-
-
-
-                </div>
-
-            </section>
-            
-
-            <!--===== WOMEN SNEAKERS =====-->
-            <section class="women section" id="women">
-                <h2 class="section-title">WOMEN SNEAKERS</h2>
-
-                <div class="women__container bd-grid">
-
-                    <article class="sneaker">
-                        
-                        <img src="assets/img/women1.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-                    <article class="sneaker">
-                        
-                        <img src="assets/img/women2.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-                    <article class="sneaker">
-                        
-                        <img src="assets/img/women3.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
-
-                    <article class="sneaker">
-                        
-                        <img src="assets/img/women4.png" alt="" class="sneaker__img">
-                        <span class="sneaker__name">Nike Jordan</span>
-                        <span class="sneaker__price">100PHP</span>
-                        <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        
-                    </article>
                     
-                </div>
-
-
+                                   
+              </div>
+              
             </section>
 
-            <!--===== OFFER =====-->
-            <section class="offer section" >
-                <div class="offer__container bd-grid">
-                  
-                        <div class="offer__data">
+             <!--===== ABOUT US =====-->
 
-                            <h3 class="offer__title">50% OFF</h3>
-                            <p class="offer__description">In Adidas Superstar sneaker</p>
-                            <a href="#" class="button">Shop Now</a>
-                        </div>
-                        <img src="assets/img/offert.png" alt="" class="offer__img">
-                 
-                </div>
-            </section>
 
-            
+             <section class="aboutus section" id="aboutus">
+                <h2 class="section-title bd-grid" id="aboutus_title">ABOUT THE COMPANY</h2>
+                 <div class="aboutus__container bd-grid" id="aboutus__one">
+                     <div class="aboutus__img" id="img__one">
+                         <div  id="img1">
+                            <img src="assets/images/HRIS-IMAGES/WEB-IMAGES/try2.jpg" alt="" class="aboutus__imgs">
+                         </div>
+                         <div  id="img2">
+                            <img src="assets/images/HRIS-IMAGES/WEB-IMAGES/try1.jpg" alt="" class="aboutus__imgs">
+                         </div>                 
+                     </div>
+                     <div class="aboutus__details" id="details__one">
 
-            <!--===== NEW COLLECTION =====-->
+                        <div class="magnify">
+                            <p class="company_name">EKKREMIS SOLUTIONS INC.</p>
+                            <br>
+                            <p class="company_info">Ekkremis Solutions, Inc. (ESI) is an integration service provider company that holds office in Makati, City Philippines.</p>
+                            <br>
+                            <p class="company_info">ESI is a Filipino-owned company and was founded by experienced Business Analysts and Information Technology professionals with background in corporate finance, human resources management and telecommunication industries in the Philippines for more than 30 mandated years of experience.</p>                       
+                       </div>   
 
-            
-
-            <section class="new__collection section" id="new">
-                <h2 class="section-title">NEW COLLECTION</h2>
-
-                <div class="new__container bd-grid">
-
-                    <div class="new__mens">
-                        <img src="assets/img/new1.png" alt="" class="new__mens-img">
-                        <h3 class="new__title">Mens Shoes</h3>
-                        <span class="new__price">From 700</span>
-                        <a href="#" class="button-light">View Collection <i class='bx bx-right-arrow-alt button-icon'></i></a>
-    
                     </div>
-    
-    
-                    <div class="new__sneaker">
-    
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new2.png" alt="" class="new__mens-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to Cart</a>  
-                            </div>
-                        </div>
-    
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new3.png" alt="" class="new__mens-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to Cart</a>  
-                            </div>
-                        </div>
-    
-    
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new4.png" alt="" class="new__mens-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to Cart</a>  
-                            </div>
-                        </div>
-    
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new5.png" alt="" class="new__mens-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to Cart</a>  
-                            </div>
-                        </div>
-    
+                 </div>
+                 <div class="aboutus__container bd-grid" id="aboutus__two">         
+                    <div class="aboutus__details" id="details__two">
+                       <p class="company_name">MISSION & VISION</p>
+                       <br>
+
+                       <div class="magnify">
+                            <p class="company_sub">MISSION</p>
+                            <br>
+                            <p class="company_info">To be a reliable partner providing support and innovative solutions that significantly contributes to business growth.</p>
+                       </div>
+                       <br>
+                       <div class="magnify">
+                            <p class="company_sub">VISION</p>
+                            <br>
+                            <p class="company_info">To be the Solution Provider of choice delivering world class technologies supportive of the ever-changing business needs.</p>
+                       </div>
                     </div>
+                   <div class="aboutus__img" id="img__two">
+                        <div  id="img3">
+                            <img src="assets/images/HRIS-IMAGES/WEB-IMAGES/aboutusimg3.jpg" alt="" class="aboutus__imgs">
+                        </div>
 
+                        <div  id="img4">
+                            <img src="assets/images/HRIS-IMAGES/WEB-IMAGES/aboutusimg4.jpg" alt="" class="aboutus__imgs">
+                        </div>
+                        
+                        
+                   </div>
+                </div>      
+              </section>
+
+              <!--===== CORE VALUES =====-->
+
+              <section class="corevalues" id="corevalues">
+                <h2 class="Core__title">CORE VALUES</h2>
+                <div class="corevalues__container bd-grid">
+                    <div class="values__box">
+                        <div class="magnify">
+                            <div id="value">
+                                <div class="box">
+                                    <img src="assets/images/illustration folder/icons/Values.png" alt="" class="values__img">
+                                    <p class="values__header">INTEGRITY IS PRIORITY</p>
+                                    <p class="values__info">We operate with full honesty, truthfulness and highest of respect.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="magnify">
+                            <div id="value">
+                                <div class="box">
+                                    <img src="assets/images/illustration folder/icons/Values.png" alt="" class="values__img">
+                                    <p class="values__header">CUSTOMER FIRST</p>
+                                    <p class="values__info">We treat our Customers with utmost priority.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="magnify">
+                            <div id="value">
+                                <div class="box">
+                                    <img src="assets/images/illustration folder/icons/Values.png" alt="" class="values__img">
+                                    <p class="values__header">PROFESSIONAL EXCELLENCE</p>
+                                    <p class="values__info">We strive for perfection through professional and competent workforce.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="magnify">
+                            <div id="value">
+                                <div class="box">
+                                    <img src="assets/images/illustration folder/icons/Values.png" alt="" class="values__img">
+                                    <p class="values__header">CONTINUOUS INNOVATION</p>
+                                    <p class="values__info">We never cease to improve and help others to improve their effectiveness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    
+                    </div>    
                 </div>
-                
+              </section> 
 
-                
+              <!--===== CLIENTS =====-->
 
-            </section>
+              <section class="clients" id="clients">
+                <h2 class="Client__title">COMPANY CLIENTS</h2>
+                 <div class="clients_container bd-grid">
+                    <div class="clients__box">
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 1.png" alt="" class="clients__img">
+                            </div>
+                        </div>
 
-            <!--===== NEWSLETTER =====-->
-            <section class="newsletter section">
-                <div class="newsletter__container bd-grid">
-                    <div>
-                        <h3 class="newsletter__title">Subcribe And Get <br> 10% OFF</h3>
-                        <p class="newsletter__description">Get 10% discount for all products</p>
-                    </div>
-                    <form action="" class="newsletter__subscribe">
-                        <input type="text" placeholder="@gmail.com" class="newsletter__input">
-                        <a href="#" class="button">Subscribe</a>
-                    </form>
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 2.png" alt="" class="clients__img">
+                            </div>
+                        </div>
 
-                </div>
-            </section>
-            
-        </main>
+                        <!--<div id="client3">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 3.png" alt="" class="clients__img">
+                            </div>
+                        </div> -->
 
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 4.png" alt="" class="clients__img">
+                            </div>
+                        </div>
+
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 5.2.png" alt="" class="clients__img">
+                            </div>
+                        </div>
+                        
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 6.png" alt="" class="clients__img">
+                            </div>
+                        </div>
+
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 7.png" alt="" class="clients__img">
+                            </div>
+                        </div>
+
+                        <div id="clients">
+                            <div class="client">
+                                <img src="assets/images/illustration folder/company logos/Group 8.png" alt="" class="clients__img">
+                            </div>
+                        </div>
+                    
+                    </div>    
+                </div>      
+              </section>
+
+
+              <footer class="footer">    
                 <div class="footer__container bd-grid">
-                    <div class="footer__box">
-                        <h3 class="footer__title">Roby</h3>
-                        <p class="footer__description">New collection of shoes 2020.</p>
-                    </div>
 
+                    <div class="footer__box">
+                        <h3 class="footer__title">EKKREMIS SOLUTIONS INC.</h3>
+                        <p class="footer__description">Unit 706, 7th Floor,Greenbelt<br> 
+                            Mansion, #106 Perea Street <br>
+                            Legaspi Village, Makati City, Philippines 1226</p>
+                    </div>
+    
                     <div class="footer__box">
                         <h3 class="footer__title">EXPLORE</h3>
                         <ul>
-                            <li><a href="#home" class="footer__link">Home</a></li>
-                            <li><a href="#featured" class="footer__link">featured</a></li>
-                            <li><a href="#women" class="footer__link">Women</a></li>
-                            <li><a href="#new" class="footer__link">New</a></li>
+                            <li><a href="#" class="footer__link">Home</a></li>
+                            <li><a href="#aboutus" class="footer__link">About Us</a></li>
+                            <li><a href="services.html" class="footer__link">Services</a></li>
+                            <li><a href="systems.html" class="footer__link">Systems</a></li>
+                            <li><a href="meettheteam.html" class="footer__link">Meet the Team</a></li>
+                            <li><a href="contactus.html" class="footer__link">Contact Us</a></li>
                         </ul>
                     </div>
-
-
+    
+    
                     <div class="footer__box">
                         <h3 class="footer__title">SUPPORT</h3>
                         <ul>
-                            <li><a href="#" class="footer__link">Product Help</a></li>
-                            <li><a href="#" class="footer__link">Customer Care</a></li>
-                            <li><a href="#" class="footer__link">Authorized Care</a></li>        
+                            <p class="footer__link">info@ekkremis.com</p>  
+                            <p class="footer__link">(02) 8280-0312</p>  
                         </ul>
                     </div>
-
-
+    
+    
                     <div class="footer__box">
-                        <a href="#" class="footer__social"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="footer__social"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="footer__social"><i class="bx bxl-google"></i></a>
+                        <a href="https://www.facebook.com/ekkremissolutions" class="footer__social"><i class="bx bxl-facebook-square" id="icon-hover"></i></a>
+                        <a href="https://www.instagram.com/ekkremisolutionsinc/" class="footer__social"><i class="bx bxl-instagram-alt" id="icon-hover"></i></a>
+                        <a href="https://www.linkedin.com/company/ekkremis-solutions-incorporated" class="footer__social"><i class="bx bxl-linkedin-square" id="icon-hover"></i></a>
+                        <br>
+                        <script language="JavaScript" src="https://dunsregistered.dnb.com" type="text/javascript"></script> 
                     </div>
 
+                    
 
-
-
+    
                 </div>
-       
-            
-                <p class="footer__copy">2020 Nathaniel. All right reserved </p>
-        </footer>
-        
+
+                <p class="footer__copy">MAKE EXCELLENCE A HABIT<br>
+                    ©COPYRIGHT 2022.ALL RIGHTS RESERVED.</p>
+                
+
+              </footer>
+
+              <a href="#" class="scrollup" id="scroll-up"> 
+                <i class="ri-arrow-up-fill scrollup__icon"></i>
+              </a>
+
+
+
+        </main>
+
+
+      
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/js/index.js"></script>
+
         
     </body>
 </html>
