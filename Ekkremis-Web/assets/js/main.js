@@ -48,9 +48,9 @@ sr.reveal(`#map-sec`,{origin: 'bottom',delay: 600})
 
 /*===== HRIS =====*/ 
 sr.reveal(`.HIRS__title`,{origin: 'left',delay: 200})
-sr.reveal(`.HIRS__details`,{origin: 'left',delay: 400})
-sr.reveal(`.mainbox2`,{origin: 'left',delay: 600})
-sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 800})
+sr.reveal(`.HIRS__details`,{origin: 'left',delay: 400, interval:250})
+sr.reveal(`.mainbox2`,{origin: 'left',delay: 1200})
+sr.reveal(`.HIRS__box2`,{origin: 'bottom',delay: 1400})
 
 
 
