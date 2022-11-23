@@ -616,6 +616,12 @@ main
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 850px)
 {
+  .servicessub__container1
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+  gap: 30px;
+} 
   .services__details
 {
 
@@ -625,7 +631,7 @@ main
   font-size: var(--normal-font-size);
   margin-bottom: 2rem;
   color: blue;
-  max-width: 1250px;
+
   
 }
   .home
