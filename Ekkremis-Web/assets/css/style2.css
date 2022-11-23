@@ -355,14 +355,6 @@ img {
 
 /*===== SERVICES SUB =====*/
 
-.servicessub__container1
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 30px;
-  border: 1px solid red;
-} 
-
 .servicessub__container
 {
   display: grid;
@@ -616,17 +608,8 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media only screen and (min-width: 850px)
+@media screen and (min-width: 850px)
 {
-
-  .services__details
-{
-
-
-  color: blue;
-
-  
-}
   .home
   {
     border: red 1px solid;
