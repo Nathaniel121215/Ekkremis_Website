@@ -608,7 +608,7 @@ main
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 850px)
+@media screen and (max-device-width: 850px)
 {
   .services__details
 {
