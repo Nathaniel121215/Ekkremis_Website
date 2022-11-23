@@ -610,6 +610,18 @@ main
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 850px)
 {
+  .services__details
+{
+
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  margin-bottom: 2rem;
+  color: blue;
+  max-width: 1250px;
+  
+}
   .home
   {
     border: red 1px solid;
