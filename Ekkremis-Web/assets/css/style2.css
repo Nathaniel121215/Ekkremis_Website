@@ -355,6 +355,12 @@ img {
 
 /*===== SERVICES SUB =====*/
 
+.servicessub__container1
+{
+  display: flex;
+
+} 
+
 .servicessub__container
 {
   display: grid;
